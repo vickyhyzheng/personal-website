@@ -1,0 +1,5 @@
+export { Home } from "./Home"
+export { AboutMe } from "./AboutMe"
+export { BeHive } from "./BeHive"
+export { Riot } from "./Riot"
+export { Triyo } from "./Triyo"

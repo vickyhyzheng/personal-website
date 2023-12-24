@@ -1,0 +1,1 @@
+export { ArticleEnd } from "./ArticleEnd"

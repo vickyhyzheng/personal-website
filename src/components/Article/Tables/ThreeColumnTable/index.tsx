@@ -1,0 +1,1 @@
+export { ThreeColumnTable } from "./ThreeColumnTable"
