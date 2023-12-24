@@ -3,7 +3,11 @@ import { Card } from "./Card"
 import RiotLogo from "../../assets/images/riot-logo.png"
 import { useNavigate } from "react-router-dom"
 
-export const RiotCard = () => {
+interface RiotCard {
+  onClick?: () => void
+}
+
+export const RiotCard = ({ onClick }: RiotCard) => {
   const navigate = useNavigate()
   const tags = ["Internal Tools", "Global UX", "Internship"]
   return (
@@ -12,7 +16,9 @@ export const RiotCard = () => {
       image={RiotLogo}
       title="Riot Games"
       tags={tags}
-      onClick={() => navigate("/riot")}
+      onClick={() => {
+        onClick ? onClick() : navigate("/riot")
+      }}
     />
   )
 }

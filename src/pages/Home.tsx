@@ -1,4 +1,4 @@
-import React from "react"
+import React, { useRef } from "react"
 
 import { Box } from "@mui/material"
 import { Sidebar } from "../components/Sidebar"
@@ -10,6 +10,9 @@ import { useNavigate } from "react-router-dom"
 
 export const Home = () => {
   const navigate = useNavigate()
+  const riotRef = useRef<HTMLElement | null>(null)
+  const behiveRef = useRef<HTMLElement | null>(null)
+  const triyoRef = useRef<HTMLElement | null>(null)
   const projects = [
     {
       title: "Riot Games Internship",
@@ -17,6 +20,7 @@ export const Home = () => {
       startDate: "May 2023",
       endDate: "August 2023",
       link: "/riot",
+      ref: riotRef,
     },
     {
       title: "BeHIVE: Designing Accountability",
@@ -24,6 +28,7 @@ export const Home = () => {
       startDate: "September 2022",
       endDate: "December 2022",
       link: "/behive",
+      ref: behiveRef,
     },
     {
       title: "Triyosoft Analytics Internship",
@@ -31,6 +36,7 @@ export const Home = () => {
       startDate: "January 2022",
       endDate: "August 2022",
       link: "/triyo",
+      ref: triyoRef,
     },
   ]
   return (
@@ -40,7 +46,7 @@ export const Home = () => {
         height: "100vh",
       }}
     >
-      <Sidebar />
+      <Sidebar projects={projects} />
       <Box
         sx={{
           flex: "1 1 auto",
@@ -51,6 +57,7 @@ export const Home = () => {
           sx={{
             display: "flex",
             p: 4,
+            pt: "128px",
             flexDirection: "column",
             alignItems: "flex-start",
             gap: "64px",
@@ -67,6 +74,7 @@ export const Home = () => {
                 endDate={project.endDate}
                 title={project.title}
                 onClick={() => navigate(project.link)}
+                ref={project.ref}
               />
             )
           })}

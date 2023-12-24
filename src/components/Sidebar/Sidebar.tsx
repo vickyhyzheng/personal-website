@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material"
-import React from "react"
+import React, { useRef } from "react"
 import { Card } from "../Card"
 import ProfileImage from "../../assets/images/face.png"
 import { useNavigate } from "react-router-dom"
@@ -8,8 +8,13 @@ import { RiotCard } from "../Card/RiotCard"
 import { BeHiveCard } from "../Card/BeHiveCard"
 import { TriyoCard } from "../Card/TriyoCard"
 import CalendarSmall from "../../assets/icons/calendar-small.svg"
+import { skipToSection } from "../../utils/skipToSection"
 
-export const Sidebar = () => {
+interface Sidebar {
+  projects: Record<string, any>[]
+}
+
+export const Sidebar = ({ projects }: Sidebar) => {
   const navigate = useNavigate()
   const intro =
     "I'm a product designer who's passionate about transforming ideas into delightful, user-friendly products that help people achieve their goals. Currently searching for FT roles."
@@ -64,9 +69,21 @@ export const Sidebar = () => {
         }}
       >
         <Typography variant="h6">My Best Work 👇</Typography>
-        <RiotCard />
-        <BeHiveCard />
-        <TriyoCard />
+        <RiotCard
+          onClick={() => {
+            skipToSection(projects[0].ref)
+          }}
+        />
+        <BeHiveCard
+          onClick={() => {
+            skipToSection(projects[1].ref)
+          }}
+        />
+        <TriyoCard
+          onClick={() => {
+            skipToSection(projects[2].ref)
+          }}
+        />
       </Box>
 
       <Box

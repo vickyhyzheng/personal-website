@@ -37,9 +37,11 @@ import BeHiveDisappear from "../assets/images/behive-disappear.gif"
 import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
 import { HomeButton } from "../components/HomeButton"
 import { useRef } from "react"
+import { skipToSection } from "../utils/skipToSection"
 
 export const BeHive = () => {
-  const takeawaysSection = useRef<HTMLDivElement | null>(null)
+  const takeawaysSection = useRef<HTMLElement | null>(null)
+  const wireframesSection = useRef<HTMLElement | null>(null)
   const headerBody = (
     <>
       <Typography variant="body2">
@@ -199,7 +201,13 @@ export const BeHive = () => {
           <RoundButton
             text="View the prototype"
             icon={FigmaSmall}
-            onClick={() => {}}
+            onClick={() => {
+              window.open(
+                "https://www.figma.com/proto/EgMfeAKtzf70Oh2BFEqChT/GBDA301---Product-Build?kind=proto&node-id=1300-9570&page-id=0%3A1&scaling=scale-down&starting-point-node-id=1300%3A9570&viewport=868%2C335%2C0.27",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }}
           />
           <Highlight
             icon={LightBulbLarge}
@@ -230,7 +238,9 @@ export const BeHive = () => {
           <RoundButton
             text="Skip to wireframes"
             icon={ArrowDown}
-            onClick={() => {}}
+            onClick={() => {
+              skipToSection(wireframesSection)
+            }}
           />
           <ArticleSubsection title="Responsibilities">
             <Box>
@@ -259,7 +269,9 @@ export const BeHive = () => {
           <RoundButton
             text="Skip to takeaways"
             icon={ArrowDown}
-            onClick={() => {}}
+            onClick={() => {
+              skipToSection(takeawaysSection)
+            }}
           />
         </ArticleSection>
         <ArticleSection>
@@ -515,7 +527,11 @@ export const BeHive = () => {
           />
         </ArticleSection>
         <ArticleSection>
-          <ArticleHeader title="Final Product" sectionType="Solution">
+          <ArticleHeader
+            title="Final Product"
+            sectionType="Solution"
+            ref={wireframesSection}
+          >
             <Typography variant="body2">
               The goal of BeHIVE is to turn friends into a system for helping
               individuals build good routines and achieve self-success. We
@@ -546,7 +562,13 @@ export const BeHive = () => {
           <RoundButton
             text="View the prototype"
             icon={EyeSmall}
-            onClick={() => {}}
+            onClick={() => {
+              window.open(
+                "https://www.figma.com/proto/EgMfeAKtzf70Oh2BFEqChT/GBDA301---Product-Build?kind=proto&node-id=1300-9570&page-id=0%3A1&scaling=scale-down&starting-point-node-id=1300%3A9570&viewport=868%2C335%2C0.27",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }}
           />
           <img
             src={BeHiveFinal}
@@ -617,6 +639,7 @@ export const BeHive = () => {
           <ArticleHeader
             title="Takeaways and Reflection"
             sectionType="Retrospective"
+            ref={takeawaysSection}
           >
             <Typography variant="body2">
               The scope of the project, as well as the duration really helped me

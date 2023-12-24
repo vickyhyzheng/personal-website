@@ -3,7 +3,11 @@ import { Card } from "./Card"
 import BeHiveLogo from "../../assets/images/behive.svg"
 import { useNavigate } from "react-router-dom"
 
-export const BeHiveCard = () => {
+interface BeHiveCard {
+  onClick?: () => void
+}
+
+export const BeHiveCard = ({ onClick }: BeHiveCard) => {
   const navigate = useNavigate()
   const tags = ["Mobile App", "Design System", "End to End"]
   return (
@@ -12,7 +16,9 @@ export const BeHiveCard = () => {
       image={BeHiveLogo}
       title="BeHIVE"
       tags={tags}
-      onClick={() => navigate("/behive")}
+      onClick={() => {
+        onClick ? onClick() : navigate("/behive")
+      }}
     />
   )
 }

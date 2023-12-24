@@ -37,7 +37,8 @@ import { useRef } from "react"
 import { skipToSection } from "../utils/skipToSection"
 
 export const Riot = () => {
-  const takeawaysSection = useRef(null)
+  const takeawaysSection = useRef<HTMLElement | null>(null)
+
   const carouselImages = [
     Image1,
     Image2,
@@ -222,7 +223,7 @@ export const Riot = () => {
             text="Skip to takeaways"
             icon={ArrowDown}
             onClick={() => {
-              skipToSection(takeawaysSection)
+              skipToSection(takeawaysSection, false)
             }}
           />
         </ArticleSection>
