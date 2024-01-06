@@ -10,6 +10,7 @@ interface CardProps {
   description?: string
   tags?: string[]
   isIcon?: boolean
+  large?: boolean
   onClick?: () => void
 }
 
@@ -20,6 +21,7 @@ export const Card = ({
   description,
   tags,
   isIcon,
+  large,
   onClick,
 }: CardProps) => {
   return (
@@ -30,7 +32,7 @@ export const Card = ({
         background: "white",
         border: "1px solid transparent",
         boxShadow: "0px 0px 1px 0px rgba(0, 0, 0, 0.25)",
-        width: "100%",
+        maxWidth: large ? "776px" : "431px",
         "&:hover": {
           cursor: "pointer",
           border:

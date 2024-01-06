@@ -170,20 +170,28 @@ export const Riot = () => {
         bannerImage={TibbersBanner}
       >
         <ArticleSection>
-          <Card
-            variant={"text"}
-            image={CalendarSmall}
-            isIcon
-            title={"Schedule a call"}
-            description="Unfortunately my projects at Riot cannot be shared with the public. Let's schedule a call if you would be interested in learning more about my experience :)"
-            onClick={() => {
-              window.open(
-                "https://calendly.com/vyzhng/vicky-zheng-1-1",
-                "_blank",
-                "noopener,noreferrer"
-              )
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
             }}
-          />
+          >
+            <Card
+              variant={"text"}
+              image={CalendarSmall}
+              isIcon
+              large
+              title={"Schedule a call"}
+              description="Unfortunately my projects at Riot cannot be shared with the public. Let's schedule a call if you would be interested in learning more about my experience :)"
+              onClick={() => {
+                window.open(
+                  "https://calendly.com/vyzhng/vicky-zheng-1-1",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }}
+            />
+          </Box>
           <ArticleHeader sectionType="Introduction" title="Overview">
             {headerBody}
           </ArticleHeader>
@@ -268,20 +276,28 @@ export const Riot = () => {
           </ArticleSubsection>
         </ArticleSection>
         <ArticleSection>
-          <Card
-            variant={"text"}
-            image={CalendarSmall}
-            isIcon
-            title={"Schedule a call"}
-            description="Unfortunately my projects at Riot cannot be shared with the public. Let's schedule a call if you would be interested in learning more about my experience :)"
-            onClick={() => {
-              window.open(
-                "https://calendly.com/vyzhng/vicky-zheng-1-1",
-                "_blank",
-                "noopener,noreferrer"
-              )
+          <Box
+            sx={{
+              display: "flex",
+              justifyContent: "center",
             }}
-          />
+          >
+            <Card
+              variant={"text"}
+              image={CalendarSmall}
+              isIcon
+              large
+              title={"Schedule a call"}
+              description="Unfortunately my projects at Riot cannot be shared with the public. Let's schedule a call if you would be interested in learning more about my experience :)"
+              onClick={() => {
+                window.open(
+                  "https://calendly.com/vyzhng/vicky-zheng-1-1",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }}
+            />
+          </Box>
           <ArticleHeader
             title="Learnings & Takeaways"
             sectionType="Retrospective"

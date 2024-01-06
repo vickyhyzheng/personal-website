@@ -22,7 +22,7 @@ export const Sidebar = ({ projects }: Sidebar) => {
     <Box
       sx={{
         display: "flex",
-        width: "45%",
+        maxWidth: "433px",
         p: 4,
         flexDirection: "column",
         justifyContent: "space-between",
@@ -49,7 +49,9 @@ export const Sidebar = ({ projects }: Sidebar) => {
           description="Learn more about me"
           onClick={() => navigate("/about")}
         />
-        <Typography variant="body1">{intro}</Typography>
+        <Box>
+          <Typography variant="body1">{intro}</Typography>
+        </Box>
         <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}>
           <SquareButton
             text="Contact Me"

@@ -5,7 +5,7 @@ const sharedTypographyStyles = {
 }
 
 export const fonts: TypographyOptions = {
-  fontFamily: '"Calibri", "Archivo Black", sans-serif',
+  fontFamily: '"Archivo Black", "Calibri", sans-serif',
   h1: {
     fontSize: "64px",
     fontFamily: '"Archivo Black", sans-serif',
