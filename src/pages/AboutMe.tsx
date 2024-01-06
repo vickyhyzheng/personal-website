@@ -14,7 +14,7 @@ export const AboutMe = () => {
         backgroundColor: "grey.white",
         height: "100vh",
         position: "relative",
-        overflow: "hidden",
+        // overflow: "hidden",
         zIndex: 1,
       }}
     >
@@ -36,6 +36,7 @@ export const AboutMe = () => {
             display: "flex",
             zIndex: 1,
             position: "relative",
+            flexWrap: "wrap",
           }}
         >
           <Box>
@@ -101,7 +102,7 @@ export const AboutMe = () => {
 
               <Box
                 sx={{
-                  width: "341px",
+                  width: "50%",
                   height: "1px",
                   backgroundColor: "grey.black",
                 }}
@@ -129,7 +130,7 @@ export const AboutMe = () => {
         </Box>
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           position: "absolute",
           bottom: 0,
@@ -149,7 +150,7 @@ export const AboutMe = () => {
             borderRadius: "50%",
           }}
         />
-      </Box>
+      </Box> */}
     </Box>
   )
 }

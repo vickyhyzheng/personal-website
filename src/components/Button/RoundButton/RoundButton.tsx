@@ -25,12 +25,16 @@ export const RoundButton = ({ text, icon, onClick }: RoundButtonProps) => {
         border: "1px solid #1B1B1B",
         background: "white",
         maxHeight: "64px",
+        width: "352px",
+        transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
         ":hover": {
           cursor: "pointer",
+          width: "368px",
           maxHeight: "68px",
           borderRadius: "16px",
           borderColor: "yellow.dark",
           backgroundColor: "yellow.light",
+          transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
         },
       }}
     >

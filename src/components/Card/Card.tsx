@@ -34,6 +34,7 @@ export const Card = ({
         boxShadow: "0px 0px 1px 0px rgba(0, 0, 0, 0.25)",
         maxWidth: large ? "776px" : null,
         width: "100%",
+        transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
         "&:hover": {
           cursor: "pointer",
           border:
@@ -45,6 +46,7 @@ export const Card = ({
           "& #circle": {
             backgroundColor: "yellow.dark",
           },
+          transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
         },
         // TODO: add animation
       }}
