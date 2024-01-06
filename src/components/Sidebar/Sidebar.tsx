@@ -22,7 +22,7 @@ export const Sidebar = ({ projects }: Sidebar) => {
     <Box
       sx={{
         display: "flex",
-        maxWidth: "433px",
+        width: "460px",
         p: 4,
         flexDirection: "column",
         justifyContent: "space-between",

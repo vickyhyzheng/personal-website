@@ -65,6 +65,7 @@ export const ArticleEnd = ({ otherArticles }: ArticleEndProps) => {
           alignItems: "flex-start",
           gap: 6,
           alignSelf: "stretch",
+          flexWrap: "wrap",
         }}
       >
         {otherArticles.map((article) => (

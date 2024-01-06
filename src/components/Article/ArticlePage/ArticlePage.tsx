@@ -22,12 +22,16 @@ export const ArticlePage = ({
     >
       <Box
         sx={{
-          px: 12,
-          py: 18,
+          mt: [12, 16],
+          mx: "auto",
+          // width: "50%",
+          px: [2, "auto"],
+          maxWidth: "800px",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
           gap: 12,
+          // maxWidth: "1280px",
         }}
       >
         <Box
@@ -37,6 +41,8 @@ export const ArticlePage = ({
             alignItems: "center",
             gap: 2,
             width: "100%",
+            textAlign: "center",
+            justifyContent: "center",
           }}
         >
           <Typography variant="h1">{title}</Typography>

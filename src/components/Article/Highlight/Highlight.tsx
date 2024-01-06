@@ -18,6 +18,7 @@ export const Highlight = ({ icon, title, content }: HighlightProps) => {
         border: "4px solid black",
         borderRadius: "12px",
         backgroundColor: "white",
+        flexWrap: "wrap",
       }}
     >
       <img

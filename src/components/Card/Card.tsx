@@ -32,7 +32,8 @@ export const Card = ({
         background: "white",
         border: "1px solid transparent",
         boxShadow: "0px 0px 1px 0px rgba(0, 0, 0, 0.25)",
-        maxWidth: large ? "776px" : "431px",
+        maxWidth: large ? "776px" : null,
+        width: "100%",
         "&:hover": {
           cursor: "pointer",
           border:

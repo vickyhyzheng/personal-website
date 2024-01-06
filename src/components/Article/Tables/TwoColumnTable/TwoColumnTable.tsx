@@ -19,6 +19,7 @@ export const TwoColumnTable = ({ contents }: TwoColumnTableProps) => {
         // m: "20px",
         gap: 4,
         width: "100%",
+        flexWrap: "wrap",
         flexShrink: 0,
 
         // justifyContent: "space-between",

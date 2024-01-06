@@ -20,6 +20,7 @@ export const TextTable = ({ contents }: TextTableProps) => {
         gap: 8,
         width: "100%",
         flexShrink: 0,
+        flexWrap: "wrap",
         // justifyContent: "space-between",
       }}
     >
