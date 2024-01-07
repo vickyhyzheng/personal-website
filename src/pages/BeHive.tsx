@@ -38,8 +38,10 @@ import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
 import { HomeButton } from "../components/HomeButton"
 import { useRef } from "react"
 import { skipToSection } from "../utils/skipToSection"
+import { usePageTitle } from "../utils/usePageTitle"
 
 export const BeHive = () => {
+  usePageTitle("Vicky Zheng | BeHive")
   const takeawaysSection = useRef<HTMLElement | null>(null)
   const wireframesSection = useRef<HTMLElement | null>(null)
   const headerBody = (

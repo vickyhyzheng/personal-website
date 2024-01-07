@@ -35,8 +35,10 @@ import Image7 from "../assets/images/carousel/2023-LAX-Intern-Week-4 7.png"
 import Image8 from "../assets/images/carousel/2023-LAX-Intern-Week-4 8.png"
 import { useRef } from "react"
 import { skipToSection } from "../utils/skipToSection"
+import { usePageTitle } from "../utils/usePageTitle"
 
 export const Riot = () => {
+  usePageTitle("Vicky Zheng | Riot")
   const takeawaysSection = useRef<HTMLElement | null>(null)
 
   const carouselImages = [

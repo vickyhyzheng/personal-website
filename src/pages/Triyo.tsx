@@ -29,8 +29,10 @@ import { HomeButton } from "../components/HomeButton"
 import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
 import { useRef } from "react"
 import { skipToSection } from "../utils/skipToSection"
+import { usePageTitle } from "../utils/usePageTitle"
 
 export const Triyo = () => {
+  usePageTitle("Vicky Zheng | Triyo")
   const wireframesSection = useRef<HTMLElement | null>(null)
   const teamTableContents = [
     {

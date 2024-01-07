@@ -7,8 +7,10 @@ import RiotInternshipBanner from "../assets/images/riot-internship-banner.png"
 import BeHiveBanner from "../assets/images/behive-banner.png"
 import TriyoBanner from "../assets/images/triyo-banner.png"
 import { useNavigate } from "react-router-dom"
+import { usePageTitle } from "../utils/usePageTitle"
 
 export const Home = () => {
+  usePageTitle("Vicky Zheng | Home")
   const navigate = useNavigate()
   const riotRef = useRef<HTMLElement | null>(null)
   const behiveRef = useRef<HTMLElement | null>(null)

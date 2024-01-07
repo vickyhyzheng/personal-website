@@ -6,8 +6,10 @@ import { IconButton } from "../components/Button/IconButton"
 import ArrowLeft from "../assets/icons/arrow-left-small.svg"
 import { useNavigate } from "react-router-dom"
 import { useDesktop } from "../utils/useDesktop"
+import { usePageTitle } from "../utils/usePageTitle"
 
 export const AboutMe = () => {
+  usePageTitle("Vicky Zheng | About")
   const navigate = useNavigate()
   const { isDesktop } = useDesktop()
   return (
