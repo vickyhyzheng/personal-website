@@ -14,7 +14,6 @@ export const SquareButton = ({ text, href }: SquareButtonProps) => {
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        m: "auto",
       }}
     >
       <a

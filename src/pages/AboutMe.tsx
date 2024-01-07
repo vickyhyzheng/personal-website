@@ -5,17 +5,19 @@ import { SquareButton } from "../components/Button/SquareButton"
 import { IconButton } from "../components/Button/IconButton"
 import ArrowLeft from "../assets/icons/arrow-left-small.svg"
 import { useNavigate } from "react-router-dom"
+import { useDesktop } from "../utils/useDesktop"
 
 export const AboutMe = () => {
   const navigate = useNavigate()
+  const { isDesktop } = useDesktop()
   return (
     <Box
       sx={{
         backgroundColor: "grey.white",
-        height: "100vh",
-        position: "relative",
-        // overflow: "hidden",
-        zIndex: 1,
+        display: "flex",
+        alignItems: "center",
+        justifyContent: "center",
+        m: "auto",
       }}
     >
       <Box
@@ -26,6 +28,7 @@ export const AboutMe = () => {
           flexDirection: "column",
           py: 8,
           px: 12,
+          maxWidth: "1088px",
         }}
       >
         <IconButton icon={ArrowLeft} onClick={() => navigate("/")} />
@@ -36,7 +39,7 @@ export const AboutMe = () => {
             display: "flex",
             zIndex: 1,
             position: "relative",
-            flexWrap: "wrap",
+            // flexWrap: "wrap",
           }}
         >
           <Box>
@@ -44,6 +47,7 @@ export const AboutMe = () => {
               src={AboutImage}
               style={{
                 borderRadius: "16px",
+                width: isDesktop ? 394 : 200,
               }}
             />
           </Box>
