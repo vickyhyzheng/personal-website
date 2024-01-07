@@ -114,7 +114,7 @@ export default function ImageCarousel({ images }: { images: string[] }) {
               <img
                 key={idx}
                 src={image}
-                width="100%"
+                height={520}
                 style={{ borderRadius: "16px", marginBottom: "64px" }}
               />
             )

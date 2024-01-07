@@ -35,7 +35,7 @@ export const ArticleEnd = ({ otherArticles }: ArticleEndProps) => {
           // alignItems: "center",
           // alignSelf: "center",
           gap: 8,
-          maxWidth: "887px",
+          maxWidth: "900px",
         }}
       >
         <Box
