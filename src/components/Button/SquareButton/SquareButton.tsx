@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material"
-import React from "react"
+import React, { useState } from "react"
 
 interface SquareButtonProps {
   text: string
@@ -7,15 +7,28 @@ interface SquareButtonProps {
 }
 
 export const SquareButton = ({ text, href }: SquareButtonProps) => {
+  const [isHovered, setIsHovered] = useState(false)
+
+  const handleHover = () => {
+    setIsHovered(true)
+  }
+
+  const handleUnhover = () => {
+    setIsHovered(false)
+  }
   return (
     <Box
-      sx={{
-        p: "4px",
-        ":hover": {
-          padding: 0,
-          transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
-        },
-      }}
+      onMouseEnter={handleHover}
+      onMouseLeave={handleUnhover}
+      sx={
+        {
+          // p: "4px",
+          // ":hover": {
+          //   // padding: 0,
+          //   ,
+          // },
+        }
+      }
     >
       <a
         className="noselect"
@@ -24,7 +37,7 @@ export const SquareButton = ({ text, href }: SquareButtonProps) => {
         rel="noopener noreferrer"
         style={{
           display: "flex",
-          padding: 0.5,
+          padding: 4,
           flexDirection: "column",
           alignItems: "flex-start",
           alignSelf: "flex-start",
@@ -33,6 +46,14 @@ export const SquareButton = ({ text, href }: SquareButtonProps) => {
           textDecoration: "none",
           width: "100%",
           height: "100%",
+          ...(isHovered && {
+            transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
+            padding: 0, // Example: Scale effect on hover
+            /* Other hover styles */
+          }),
+          ...(!isHovered && {
+            transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
+          }),
         }}
       >
         <Box

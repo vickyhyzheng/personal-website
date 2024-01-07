@@ -38,7 +38,7 @@ export const Card = ({
         "&:hover": {
           cursor: "pointer",
           border:
-            variant === "text" ? "1px solid #FFCA42" : "1px solid transparent",
+            variant === "text" ? "1px solid #FFCA42" : "1px solid #1B1B1B",
           backgroundColor: variant === "text" ? "yellow.light" : "white",
           "& .tag": {
             opacity: 1,
@@ -51,6 +51,11 @@ export const Card = ({
             // pr: 0,
             transform: "translateX(16px)",
             // transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
+          },
+          "#card_image": {
+            height: variant === "tags" ? "72px !important" : 72,
+            width: variant === "tags" ? "72px !important" : 72,
+            transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
           },
           transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
         },
@@ -72,17 +77,20 @@ export const Card = ({
             }}
           >
             <img
+              id="card_image"
               src={image}
               alt="card icon"
               style={{
                 width: "32px",
                 height: "32px",
                 padding: "16px",
+                transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
               }}
             />
           </Box>
         ) : (
           <img
+            id="card_image"
             src={image}
             alt="card icon"
             style={{
@@ -90,6 +98,7 @@ export const Card = ({
               width: 64,
               borderRadius: "50%",
               backgroundColor: "grey.light",
+              transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
             }}
           />
         )}

@@ -20,57 +20,69 @@ export const ArticleEnd = ({ otherArticles }: ArticleEndProps) => {
     <Box
       sx={{
         display: "flex",
-        p: "64px 96px 192px 96px",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 8,
+        // p: "64px 96px 192px 96px",
+
         backgroundColor: "grey.light",
       }}
     >
       <Box
         sx={{
+          m: "auto",
+          mt: 8,
+          mb: "192px",
           display: "flex",
           flexDirection: "column",
-          alignItems: "flex-start",
-          gap: 4,
-          alignSelf: "stretch",
+          // alignItems: "center",
+          // alignSelf: "center",
+          gap: 8,
+          maxWidth: "887px",
         }}
       >
-        <Typography variant="h5">Thanks For Reading!</Typography>
-        <Box>
-          <Typography display="inline" variant="body2">
-            Want to work together?{" "}
-          </Typography>
-          <Typography
-            display="inline"
-            variant="body2"
-            sx={{ "&:hover": { cursor: "pointer" } }}
-            onClick={() => {
-              window.open(
-                "https://www.linkedin.com/in/vyzheng/",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }}
-          >
-            <strong>
-              <u>Let's connect 😃</u>
-            </strong>
-          </Typography>
+        <Box
+          sx={{
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "flex-start",
+            gap: 4,
+            // alignSelf: "stretch",
+          }}
+        >
+          <Typography variant="h5">Thanks For Reading!</Typography>
+          <Box>
+            <Typography display="inline" variant="body2">
+              Want to work together?{" "}
+            </Typography>
+            <Typography
+              display="inline"
+              variant="body2"
+              sx={{ "&:hover": { cursor: "pointer" } }}
+              onClick={() => {
+                window.open(
+                  "https://www.linkedin.com/in/vyzheng/",
+                  "_blank",
+                  "noopener,noreferrer"
+                )
+              }}
+            >
+              <strong>
+                <u>Let's connect 😃</u>
+              </strong>
+            </Typography>
+          </Box>
         </Box>
-      </Box>
-      <Box
-        sx={{
-          display: "flex",
-          alignItems: "flex-start",
-          gap: 6,
-          alignSelf: "stretch",
-          flexWrap: "wrap",
-        }}
-      >
-        {otherArticles.map((article) => (
-          <div key={article}>{EXP_TO_CARD_MAPPING[article]}</div>
-        ))}
+        <Box
+          sx={{
+            display: "flex",
+            alignItems: "flex-start",
+            gap: 6,
+            alignSelf: "stretch",
+            flexWrap: "wrap",
+          }}
+        >
+          {otherArticles.map((article) => (
+            <div key={article}>{EXP_TO_CARD_MAPPING[article]}</div>
+          ))}
+        </Box>
       </Box>
     </Box>
   )

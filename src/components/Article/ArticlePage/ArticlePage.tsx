@@ -26,7 +26,7 @@ export const ArticlePage = ({
           mx: "auto",
           // width: "50%",
           px: [2, "auto"],
-          maxWidth: "800px",
+          maxWidth: "887px",
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
