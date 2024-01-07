@@ -21,7 +21,7 @@ export const IconButton = ({ icon, onClick }: IconButtonProps) => {
         backgroundColor: "grey.black",
         boxShadow: "3px 2px 4px 0px rgba(0, 0, 0, 0.15)",
         transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
-        ":hover": {
+        "&:hover": {
           cursor: "pointer",
           opacity: 1,
           transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",

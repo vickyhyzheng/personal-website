@@ -45,9 +45,12 @@ export const Card = ({
           },
           "& #circle": {
             backgroundColor: "yellow.dark",
+            transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
           },
-          "& #arrow": {
-            pr: 0,
+          "#arrow_icon": {
+            // pr: 0,
+            transform: "translateX(16px)",
+            // transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
           },
           transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
         },
@@ -128,13 +131,14 @@ export const Card = ({
         </Box>
         {variant === "text" && (
           <img
-            id="arrow"
+            id="arrow_icon"
             src={ArrowRight}
             alt="right icon"
             style={{
               width: 32,
               height: 32,
               paddingRight: 16,
+              transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
             }}
           />
         )}

@@ -44,7 +44,7 @@ export const ArticleEnd = ({ otherArticles }: ArticleEndProps) => {
           <Typography
             display="inline"
             variant="body2"
-            sx={{ ":hover": { cursor: "pointer" } }}
+            sx={{ "&:hover": { cursor: "pointer" } }}
             onClick={() => {
               window.open(
                 "https://www.linkedin.com/in/vyzheng/",

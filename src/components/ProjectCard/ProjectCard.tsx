@@ -26,9 +26,12 @@ export const ProjectCard = forwardRef(
           borderRadius: "16px",
           backgroundColor: "grey.white",
           width: "100%",
-          ":hover": {
+          "&:hover": {
             cursor: "pointer",
             boxShadow: "0px 10px 32px 0px #FFF",
+            "#arrow_icon": {
+              transform: "translateX(26px)",
+            },
           },
         }}
       >
@@ -78,7 +81,16 @@ export const ProjectCard = forwardRef(
               </Typography>
               <Typography variant="h2">{title}</Typography>
             </Box>
-            <img src={ArrowRight} style={{ width: 32, height: 32 }} />
+            <img
+              id="arrow_icon"
+              src={ArrowRight}
+              style={{
+                width: 32,
+                height: 32,
+                paddingRight: 26,
+                transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
+              }}
+            />
           </Box>
         </Box>
       </Box>
