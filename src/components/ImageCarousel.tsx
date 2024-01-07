@@ -66,16 +66,18 @@ export default function ImageCarousel({ images }: { images: string[] }) {
   }
 
   useEffect(() => {
-    if (containerRef.current) {
-      const totalWidth =
-        containerRef.current.scrollWidth - containerRef.current.clientWidth
-      startScrollLoop(
-        containerRef.current,
-        totalWidth,
-        scrollDuration,
-        pauseDuration
-      ) // Start the scroll loop with a 1-second pause
-    }
+    setTimeout(() => {
+      if (containerRef.current) {
+        const totalWidth =
+          containerRef.current.scrollWidth - containerRef.current.clientWidth
+        startScrollLoop(
+          containerRef.current,
+          totalWidth,
+          scrollDuration,
+          pauseDuration
+        ) // Start the scroll loop with a 1-second pause
+      }
+    }, 1000)
   }, [])
 
   const handleScroll = (event: React.UIEvent<HTMLDivElement>) => {
