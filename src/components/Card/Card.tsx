@@ -46,6 +46,9 @@ export const Card = ({
           "& #circle": {
             backgroundColor: "yellow.dark",
           },
+          "& #arrow": {
+            pr: 0,
+          },
           transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
         },
         // TODO: add animation
@@ -125,11 +128,13 @@ export const Card = ({
         </Box>
         {variant === "text" && (
           <img
+            id="arrow"
             src={ArrowRight}
             alt="right icon"
             style={{
               width: 32,
               height: 32,
+              paddingRight: 16,
             }}
           />
         )}
