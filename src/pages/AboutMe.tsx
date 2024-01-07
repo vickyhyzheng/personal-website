@@ -119,7 +119,7 @@ export const AboutMe = () => {
                   gap: "19px",
                 }}
               >
-                <SquareButton text="Resume" href="" />
+                <SquareButton text="Resume" href="/Vicky_Zheng_Resume.pdf" />
                 <SquareButton
                   text="LinkedIn"
                   href="https://www.linkedin.com/in/vyzheng/"

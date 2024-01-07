@@ -1,24 +1,17 @@
-import { createBrowserRouter } from "react-router-dom"
+import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
+
 import { AboutMe, Home, Riot, BeHive, Triyo } from "../pages"
-export const router = createBrowserRouter([
-  {
-    path: "/",
-    element: <Home />,
-  },
-  {
-    path: "/about",
-    element: <AboutMe />,
-  },
-  {
-    path: "/riot",
-    element: <Riot />,
-  },
-  {
-    path: "/behive",
-    element: <BeHive />,
-  },
-  {
-    path: "/triyo",
-    element: <Triyo />,
-  },
-])
+export const Router = () => {
+  return (
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/about" element={<AboutMe />} />
+        <Route path="/riot" element={<Riot />} />
+        <Route path="/behive" element={<BeHive />} />
+        <Route path="/triyo" element={<Triyo />} />
+        <Route path="*" element={<Navigate to="/" />} />
+      </Routes>
+    </BrowserRouter>
+  )
+}

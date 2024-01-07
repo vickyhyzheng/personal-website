@@ -1,5 +1,5 @@
 import { Box, Typography } from "@mui/material"
-import React, { useRef } from "react"
+import React from "react"
 import { Card } from "../Card"
 import ProfileImage from "../../assets/images/face.png"
 import { useNavigate } from "react-router-dom"
@@ -58,7 +58,7 @@ export const Sidebar = ({ projects }: Sidebar) => {
             text="Contact Me"
             href="mailto:vickyhy.zheng@gmail.com"
           />
-          <SquareButton text="Resume" href="" />
+          <SquareButton text="Resume" href="/Vicky_Zheng_Resume.pdf" />
         </Box>
       </Box>
 
