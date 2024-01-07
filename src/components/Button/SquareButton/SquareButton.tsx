@@ -4,31 +4,34 @@ import React, { useState } from "react"
 interface SquareButtonProps {
   text: string
   href: string
+  hovered?: boolean // FOR TESTING
 }
 
-export const SquareButton = ({ text, href }: SquareButtonProps) => {
-  const [isHovered, setIsHovered] = useState(false)
+export const SquareButton = ({ text, href, hovered }: SquareButtonProps) => {
+  const [isHovered, setIsHovered] = useState(hovered)
 
   const handleHover = () => {
-    setIsHovered(true)
+    // setIsHovered(true)
   }
 
   const handleUnhover = () => {
-    setIsHovered(false)
+    // setIsHovered(false)
   }
   return (
     <Box
       onMouseEnter={handleHover}
       onMouseLeave={handleUnhover}
-      sx={
-        {
-          // p: "4px",
-          // ":hover": {
-          //   // padding: 0,
-          //   ,
-          // },
-        }
-      }
+      sx={{
+        display: "flex",
+        flexDirection: "column",
+        alignItems: "center",
+        justifyContent: "center",
+        // p: "4px",
+        // ":hover": {
+        //   // padding: 0,
+        //   ,
+        // },
+      }}
     >
       <a
         className="noselect"

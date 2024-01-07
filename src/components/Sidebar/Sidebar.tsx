@@ -57,8 +57,9 @@ export const Sidebar = ({ projects }: Sidebar) => {
           <SquareButton
             text="Contact Me"
             href="mailto:vickyhy.zheng@gmail.com"
+            hovered
           />
-          <SquareButton text="Resume" href="" />
+          <SquareButton text="Resume" href="" hovered={false} />
         </Box>
       </Box>
 
