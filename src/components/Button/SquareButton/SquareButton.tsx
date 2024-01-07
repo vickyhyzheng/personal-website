@@ -4,33 +4,17 @@ import React, { useState } from "react"
 interface SquareButtonProps {
   text: string
   href: string
-  hovered?: boolean // FOR TESTING
 }
 
-export const SquareButton = ({ text, href, hovered }: SquareButtonProps) => {
-  const [isHovered, setIsHovered] = useState(hovered)
-
-  const handleHover = () => {
-    // setIsHovered(true)
-  }
-
-  const handleUnhover = () => {
-    // setIsHovered(false)
-  }
+export const SquareButton = ({ text, href }: SquareButtonProps) => {
   return (
     <Box
-      onMouseEnter={handleHover}
-      onMouseLeave={handleUnhover}
       sx={{
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        // p: "4px",
-        // ":hover": {
-        //   // padding: 0,
-        //   ,
-        // },
+        m: "auto",
       }}
     >
       <a
@@ -40,23 +24,13 @@ export const SquareButton = ({ text, href, hovered }: SquareButtonProps) => {
         rel="noopener noreferrer"
         style={{
           display: "flex",
-          padding: 4,
           flexDirection: "column",
           alignItems: "flex-start",
           alignSelf: "flex-start",
           gap: "10px",
           flexShrink: 0,
           textDecoration: "none",
-          width: "100%",
           height: "100%",
-          ...(isHovered && {
-            transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
-            padding: 0, // Example: Scale effect on hover
-            /* Other hover styles */
-          }),
-          ...(!isHovered && {
-            transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
-          }),
         }}
       >
         <Box
@@ -71,6 +45,14 @@ export const SquareButton = ({ text, href, hovered }: SquareButtonProps) => {
             alignSelf: "stretch",
             borderRadius: "7px",
             background: "#1B1B1B",
+            "&:hover": {
+              px: "32px",
+              py: "16px",
+              borderRadius: "12px",
+              m: "-4px",
+              transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
+            },
+            transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
           }}
         >
           <Typography variant="body1" sx={{ color: "grey.white" }}>

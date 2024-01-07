@@ -53,13 +53,12 @@ export const Sidebar = ({ projects }: Sidebar) => {
         <Box>
           <Typography variant="body1">{intro}</Typography>
         </Box>
-        <Box sx={{ display: "flex", alignItems: "flex-start", gap: 2 }}>
+        <Box sx={{ display: "flex", alignItems: "flex-start", gap: 3 }}>
           <SquareButton
             text="Contact Me"
             href="mailto:vickyhy.zheng@gmail.com"
-            hovered
           />
-          <SquareButton text="Resume" href="" hovered={false} />
+          <SquareButton text="Resume" href="" />
         </Box>
       </Box>
 
