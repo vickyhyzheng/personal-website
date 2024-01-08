@@ -17,7 +17,7 @@ interface Sidebar {
 export const Sidebar = ({ projects }: Sidebar) => {
   const navigate = useNavigate()
   const intro =
-    "I'm a product designer who's passionate about transforming ideas into delightful, user-friendly products that help people achieve their goals. Currently searching for FT roles."
+    "I'm a product designer who is passionate about creating experiences that delight the user. 🇨🇦"
   return (
     <Box
       sx={{
