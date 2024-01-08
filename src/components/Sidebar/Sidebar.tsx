@@ -89,7 +89,7 @@ export const Sidebar = ({ projects }: Sidebar) => {
         />
       </Box>
 
-      <Box
+      {/* <Box
         sx={{
           display: "flex",
           flexDirection: "column",
@@ -115,7 +115,7 @@ export const Sidebar = ({ projects }: Sidebar) => {
             )
           }}
         />
-      </Box>
+      </Box> */}
     </Box>
   )
 }
