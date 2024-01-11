@@ -17,7 +17,7 @@ export const TextTable = ({ contents }: TextTableProps) => {
         display: "flex",
         alignItems: "flex-start",
         // m: "20px",
-        gap: 8,
+        gap: 2,
         width: "100%",
         flexShrink: 0,
         flexWrap: "wrap",

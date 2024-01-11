@@ -19,7 +19,7 @@ export const ThreeColumnTable = ({ contents }: ThreeColumnTableProps) => {
       sx={{
         display: "flex",
         alignItems: "flex-start",
-        gap: 8,
+        gap: 2,
         width: "100%",
         flexShrink: 0,
         flexWrap: "wrap",
