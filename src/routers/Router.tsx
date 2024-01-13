@@ -1,11 +1,13 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
 
-import { AboutMe, Home, Riot, BeHive, Triyo } from "../pages"
+import { AboutMe, Riot, BeHive, Triyo } from "../pages"
+import { HomeContainer } from "../pages/Home"
+
 export const Router = () => {
   return (
     <BrowserRouter>
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<HomeContainer />} />
         <Route path="/about" element={<AboutMe />} />
         <Route path="/riot" element={<Riot />} />
         <Route path="/behive" element={<BeHive />} />

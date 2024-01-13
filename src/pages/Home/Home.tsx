@@ -1,13 +1,13 @@
 import React, { useRef } from "react"
 
 import { Box } from "@mui/material"
-import { Sidebar } from "../components/Sidebar"
-import { ProjectCard } from "../components/ProjectCard"
-import RiotInternshipBanner from "../assets/images/riot-internship-banner.png"
-import BeHiveBanner from "../assets/images/behive-banner.png"
-import TriyoBanner from "../assets/images/triyo-banner.png"
+import { Sidebar } from "../../components/Sidebar"
+import { ProjectCard } from "../../components/ProjectCard"
+import RiotInternshipBanner from "../../assets/images/riot-internship-banner.png"
+import BeHiveBanner from "../../assets/images/behive-banner.png"
+import TriyoBanner from "../../assets/images/triyo-banner.png"
 import { useNavigate } from "react-router-dom"
-import { usePageTitle } from "../utils/usePageTitle"
+import { usePageTitle } from "../../utils/usePageTitle"
 
 export const Home = () => {
   usePageTitle("Vicky Zheng | Home")
