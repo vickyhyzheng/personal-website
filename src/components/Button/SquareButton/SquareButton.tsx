@@ -17,23 +17,27 @@ export const SquareButton = ({ text, href }: SquareButtonProps) => {
       rel="noopener noreferrer"
       style={{
         textDecoration: "none",
-        // width: isDesktop ? "auto" : "100%",
+        width: isDesktop ? "auto" : "100%",
       }}
     >
       <Box
         sx={{
           display: "flex",
-          px: "28px",
+          px: isDesktop ? "28px" : 0,
           py: "12px",
-          borderRadius: "7px",
+          borderRadius: isDesktop ? "7px" : "12px",
           background: "#1B1B1B",
-          "&:hover": {
-            px: "32px",
-            py: "16px",
-            borderRadius: "12px",
-            m: "-4px",
-            transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
-          },
+          justifyContent: "center",
+          width: isDesktop ? "auto" : "100%",
+          "&:hover": isDesktop
+            ? {
+                px: "32px",
+                py: "16px",
+                borderRadius: "12px",
+                m: "-4px",
+                transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
+              }
+            : {},
           transition: "all 0.3s cubic-bezier(0.41, -1, 0.5, 2)",
         }}
       >

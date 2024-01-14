@@ -83,7 +83,7 @@ export const HomeMobile = () => {
           sx={{
             display: "flex",
             alignItems: "flex-start",
-            // justifyContent: "center",
+            width: "100%",
             gap: 3,
           }}
         >
