@@ -39,11 +39,13 @@ export const fonts: TypographyOptions = {
   body1: {
     fontSize: "16px",
     fontFamily: '"Calibri", sans-serif',
+    lineHeight: "150%",
     ...sharedTypographyStyles,
   },
   body2: {
-    fontSize: "24px",
+    fontSize: "18px",
     fontFamily: '"Calibri", sans-serif',
+    lineHeight: "150%",
     ...sharedTypographyStyles,
   },
   tag: {

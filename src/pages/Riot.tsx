@@ -149,12 +149,7 @@ export const Riot = () => {
       description: (
         <>
           <Typography variant="body2">
-            Being at Riot exposed me to the various teams in the background that
-            makes the magic happen.{" "}
-          </Typography>
-          <Typography variant="body2">
-            <br />
-            Designing the custom tools for these customers was an incredible
+            Designing the custom tools for internal customers was an incredible
             learning opportunity on gaining empathy with a very rare and unique
             user.
           </Typography>
@@ -184,7 +179,7 @@ export const Riot = () => {
               isIcon
               large
               title={"Schedule a call"}
-              description="Unfortunately my projects at Riot cannot be shared with the public. Let's schedule a call if you would be interested in learning more about my experience :)"
+              description="My Riot projects are confidential, but I'd be happy to discuss my experience with you in a call. Interested? :)"
               onClick={() => {
                 window.open(
                   "https://calendly.com/vyzhng/vicky-zheng-1-1",
@@ -290,7 +285,7 @@ export const Riot = () => {
               isIcon
               large
               title={"Schedule a call"}
-              description="Unfortunately my projects at Riot cannot be shared with the public. Let's schedule a call if you would be interested in learning more about my experience :)"
+              description="My Riot projects are confidential, but I'd be happy to discuss my experience with you in a call. Interested? :)"
               onClick={() => {
                 window.open(
                   "https://calendly.com/vyzhng/vicky-zheng-1-1",

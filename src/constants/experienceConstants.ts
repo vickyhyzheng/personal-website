@@ -1,1 +1,1 @@
-export type Experience = "riot" | "behive" | "triyo"
+export type Experience = "riot" | "behive" | "triyo" | "blnd"

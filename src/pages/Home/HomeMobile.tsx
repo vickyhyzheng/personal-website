@@ -6,6 +6,7 @@ import { ProjectCard } from "../../components/ProjectCard"
 import RiotInternshipBanner from "../../assets/images/riot-internship-banner.png"
 import BeHiveBanner from "../../assets/images/behive-banner.png"
 import TriyoBanner from "../../assets/images/triyo-banner.png"
+import BlndBanner from "../../assets/images/blnd-banner.png"
 import { useNavigate } from "react-router-dom"
 import { usePageTitle } from "../../utils/usePageTitle"
 import { Card } from "../../components/Card"
@@ -18,6 +19,7 @@ export const HomeMobile = () => {
   const riotRef = useRef<HTMLElement | null>(null)
   const behiveRef = useRef<HTMLElement | null>(null)
   const triyoRef = useRef<HTMLElement | null>(null)
+  const blndRef = useRef<HTMLElement | null>(null)
   const projects = [
     {
       title: "Riot Games Internship",
@@ -42,6 +44,14 @@ export const HomeMobile = () => {
       endDate: "August 2022",
       link: "/triyo",
       ref: triyoRef,
+    },
+    {
+      title: "BLND Brand Redesign",
+      image: BlndBanner,
+      startDate: "December 2021",
+      endDate: "January 2022",
+      link: "/blnd",
+      ref: blndRef,
     },
   ]
   return (

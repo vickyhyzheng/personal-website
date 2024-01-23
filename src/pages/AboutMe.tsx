@@ -7,6 +7,7 @@ import ArrowLeft from "../assets/icons/arrow-left-small.svg"
 import { useNavigate } from "react-router-dom"
 import { useDesktop } from "../utils/useDesktop"
 import { usePageTitle } from "../utils/usePageTitle"
+import { HomeButton } from "../components/HomeButton"
 
 export const AboutMe = () => {
   usePageTitle("Vicky Zheng | About")
@@ -28,12 +29,14 @@ export const AboutMe = () => {
           gap: 4,
           alignItems: "flex-start",
           flexDirection: "column",
-          py: 8,
-          px: 12,
+          py: [4, 8],
+          px: [2, 12],
           maxWidth: "1088px",
         }}
       >
-        <IconButton icon={ArrowLeft} onClick={() => navigate("/")} />
+        {isDesktop && (
+          <IconButton icon={ArrowLeft} onClick={() => navigate("/")} />
+        )}
 
         <Box
           sx={{
@@ -41,38 +44,53 @@ export const AboutMe = () => {
             display: "flex",
             zIndex: 1,
             position: "relative",
-            // flexWrap: "wrap",
           }}
         >
-          <Box>
-            <img
-              src={AboutImage}
-              style={{
-                borderRadius: "16px",
-                width: isDesktop ? 394 : 200,
-              }}
-            />
-          </Box>
+          {isDesktop && (
+            <Box>
+              <img
+                src={AboutImage}
+                style={{
+                  borderRadius: "16px",
+                  width: isDesktop ? 394 : 200,
+                }}
+              />
+            </Box>
+          )}
+
           <Box>
             <Box
               sx={{
                 display: "flex",
                 flexDirection: "column",
-                gap: 4,
+                gap: ["30px", 4],
               }}
             >
               <Box>
-                <Typography variant="h1">I'm Vicky.</Typography>
-                <Typography variant="h1">Nice to meet you!</Typography>
+                <Typography variant={isDesktop ? "h1" : "h3"}>
+                  I'm Vicky.
+                </Typography>
+                <Typography variant={isDesktop ? "h1" : "h3"}>
+                  Nice to meet you!
+                </Typography>
               </Box>
+              {!isDesktop && (
+                <Box>
+                  <img
+                    src={AboutImage}
+                    style={{
+                      borderRadius: "16px",
+                      width: "100%",
+                    }}
+                  />
+                </Box>
+              )}
               <Box>
                 <Typography variant="body1">
                   I'm a product designer based in Toronto, Canada currently
-                  studying UX design at the University of Waterloo.
-                </Typography>
-                <Typography variant="body1">
-                  Previously I have worked at Riot Games as a UX design intern
-                  🤠 and a freelance illustrator.
+                  studying UX design at the University of Waterloo. Previously I
+                  have worked at Riot Games as a UX design intern 🤠 and a
+                  freelance illustrator.
                 </Typography>
               </Box>
               <Typography variant="body1">
@@ -108,7 +126,7 @@ export const AboutMe = () => {
 
               <Box
                 sx={{
-                  width: "50%",
+                  width: ["60%", "50%"],
                   height: "1px",
                   backgroundColor: "grey.black",
                 }}
@@ -117,8 +135,8 @@ export const AboutMe = () => {
               <Box
                 sx={{
                   display: "flex",
-                  flexDirection: "row",
-                  gap: "19px",
+                  flexDirection: ["column", "row"],
+                  gap: [4, "19px"],
                 }}
               >
                 <SquareButton text="Resume" href="/Vicky_Zheng_Resume.pdf" />
@@ -133,6 +151,7 @@ export const AboutMe = () => {
               </Box>
             </Box>
           </Box>
+          {!isDesktop && <HomeButton />}
         </Box>
       </Box>
 

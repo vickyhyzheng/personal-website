@@ -31,7 +31,9 @@ export const ArticleHeader = forwardRef(
           }}
         >
           <Typography variant="body1">{sectionType}</Typography>
-          <Typography variant="h4">{title}</Typography>
+          <Typography variant="h4" sx={{ wordBreak: "break-word" }}>
+            {title}
+          </Typography>
         </Box>
         <Box>{children}</Box>
       </Box>

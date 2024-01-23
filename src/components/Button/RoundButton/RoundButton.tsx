@@ -1,5 +1,6 @@
 import { Box, Typography } from "@mui/material"
 import React from "react"
+import { useDesktop } from "../../../utils/useDesktop"
 
 interface RoundButtonProps {
   text: string
@@ -8,6 +9,7 @@ interface RoundButtonProps {
 }
 
 export const RoundButton = ({ text, icon, onClick }: RoundButtonProps) => {
+  const { isDesktop } = useDesktop()
   return (
     <Box
       className="noselect"
@@ -15,7 +17,7 @@ export const RoundButton = ({ text, icon, onClick }: RoundButtonProps) => {
       sx={{
         display: "flex",
         py: "16px",
-        px: "44px",
+        px: isDesktop ? "44px" : "auto",
         justifyContent: "center",
         alignItems: "center",
         gap: 4,
@@ -25,7 +27,7 @@ export const RoundButton = ({ text, icon, onClick }: RoundButtonProps) => {
         border: "1px solid #1B1B1B",
         background: "white",
         maxHeight: "64px",
-        width: "352px",
+        width: isDesktop ? "352px" : "100%",
         transition: "all 0.4s cubic-bezier(0.41, -1, 0.5, 2)",
         ":hover": {
           cursor: "pointer",

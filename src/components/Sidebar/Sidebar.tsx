@@ -9,13 +9,17 @@ import { BeHiveCard } from "../Card/BeHiveCard"
 import { TriyoCard } from "../Card/TriyoCard"
 import CalendarSmall from "../../assets/icons/calendar-small.svg"
 import { skipToSection } from "../../utils/skipToSection"
+import { BlndCard } from "../Card/BlndCard"
+import { useProjectMapping } from "../../utils/projectMapping"
 
 interface Sidebar {
-  projects: Record<string, any>[]
+  projects: string[]
 }
 
 export const Sidebar = ({ projects }: Sidebar) => {
   const navigate = useNavigate()
+  const { projectMap } = useProjectMapping()
+
   const intro =
     "I'm a product designer who is passionate about creating experiences that delight the user. 🇨🇦"
   return (
@@ -74,17 +78,22 @@ export const Sidebar = ({ projects }: Sidebar) => {
         <Typography variant="h6">My Best Work 👇</Typography>
         <RiotCard
           onClick={() => {
-            skipToSection(projects[0].ref)
+            skipToSection(projectMap["riot"].ref)
           }}
         />
         <BeHiveCard
           onClick={() => {
-            skipToSection(projects[1].ref)
+            skipToSection(projectMap["behive"].ref)
           }}
         />
         <TriyoCard
           onClick={() => {
-            skipToSection(projects[2].ref)
+            skipToSection(projectMap["triyo"].ref)
+          }}
+        />
+        <BlndCard
+          onClick={() => {
+            skipToSection(projectMap["blnd"].ref)
           }}
         />
       </Box>

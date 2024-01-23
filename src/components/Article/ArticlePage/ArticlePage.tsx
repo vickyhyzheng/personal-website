@@ -24,6 +24,7 @@ export const ArticlePage = ({
         sx={{
           mt: [12, 16],
           mx: "auto",
+          mb: 12,
           // width: "50%",
           px: [2, "auto"],
           maxWidth: "887px",

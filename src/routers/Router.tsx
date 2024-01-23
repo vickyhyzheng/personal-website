@@ -1,6 +1,6 @@
 import { BrowserRouter, Route, Routes, Navigate } from "react-router-dom"
 
-import { AboutMe, Riot, BeHive, Triyo } from "../pages"
+import { AboutMe, Riot, BeHive, Triyo, Blnd } from "../pages"
 import { HomeContainer } from "../pages/Home"
 
 export const Router = () => {
@@ -12,6 +12,7 @@ export const Router = () => {
         <Route path="/riot" element={<Riot />} />
         <Route path="/behive" element={<BeHive />} />
         <Route path="/triyo" element={<Triyo />} />
+        <Route path="/blnd" element={<Blnd />} />
         <Route path="*" element={<Navigate to="/" />} />
       </Routes>
     </BrowserRouter>
