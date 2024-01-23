@@ -36,6 +36,12 @@ export const fonts: TypographyOptions = {
     fontWeight: 700,
     ...sharedTypographyStyles,
   },
+  h6: {
+    fontSize: "16px",
+    fontFamily: '"Archivo Black", sans-serif',
+    fontWeight: 400,
+    ...sharedTypographyStyles,
+  },
   body1: {
     fontSize: "16px",
     fontFamily: '"Calibri", sans-serif',
