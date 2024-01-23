@@ -21,7 +21,7 @@ export const Home = () => {
         height: "100vh",
       }}
     >
-      <Sidebar projects={projects} />
+      <Sidebar projectMap={projectMap} />
       <Box
         sx={{
           flex: "1 1 auto",

@@ -7,21 +7,18 @@ import { SquareButton } from "../Button/SquareButton"
 import { RiotCard } from "../Card/RiotCard"
 import { BeHiveCard } from "../Card/BeHiveCard"
 import { TriyoCard } from "../Card/TriyoCard"
-import CalendarSmall from "../../assets/icons/calendar-small.svg"
 import { skipToSection } from "../../utils/skipToSection"
 import { BlndCard } from "../Card/BlndCard"
-import { useProjectMapping } from "../../utils/projectMapping"
 
 interface Sidebar {
-  projects: string[]
+  projectMap: Record<string, Record<string, any>>
 }
 
-export const Sidebar = ({ projects }: Sidebar) => {
+export const Sidebar = ({ projectMap }: Sidebar) => {
   const navigate = useNavigate()
-  const { projectMap } = useProjectMapping()
-
   const intro =
     "I'm a product designer who is passionate about creating experiences that delight the user. 🇨🇦"
+
   return (
     <Box
       sx={{
@@ -43,7 +40,7 @@ export const Sidebar = ({ projects }: Sidebar) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
-          gap: "22px",
+          gap: "12px",
           alignSelf: "stretch",
         }}
       >
