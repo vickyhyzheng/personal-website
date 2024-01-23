@@ -21,6 +21,7 @@ export const AboutMe = () => {
         alignItems: "center",
         justifyContent: "center",
         m: "auto",
+        mb: ["160px", "auto"],
       }}
     >
       <Box
