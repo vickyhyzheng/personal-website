@@ -215,7 +215,7 @@ export const Blnd = () => {
 
         {/*  */}
         <ArticleSection>
-          <ArticleHeader title="Typography" sectionType="Typeface">
+          <ArticleHeader title="Typeface" sectionType="Typography">
             <Typography variant="body2">
               Rajdhani Bold is the chosen typeface for this project with Lato
               for paragraph text. These fonts were picked for their bold, clean

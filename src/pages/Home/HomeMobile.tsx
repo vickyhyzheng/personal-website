@@ -114,8 +114,9 @@ export const HomeMobile = () => {
         <Box
           sx={{
             display: "flex",
-            p: 4,
-            // pt: "128px",
+            pt: 4,
+            px: "10px",
+            pb: 8,
             flexDirection: "column",
             alignItems: "flex-start",
             gap: "64px",
