@@ -108,7 +108,7 @@ export const Blnd = () => {
     <>
       <ScrollToTopOnMount />
       <ArticlePage
-        title={"BNLD"}
+        title={"BLND"}
         subtitle={"Rethinking brand identity"}
         bannerImage={BlndBanner}
       >
