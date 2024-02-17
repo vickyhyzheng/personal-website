@@ -62,7 +62,9 @@ export const Card = ({
         // TODO: add animation
       }}
     >
-      <Box sx={{ display: "flex", px: 2, py: 1, gap: 2, alignItems: "center" }}>
+      <Box
+        sx={{ display: "flex", px: 2, py: "2px", gap: 2, alignItems: "center" }}
+      >
         {isIcon ? (
           <Box
             id="circle"
