@@ -40,7 +40,7 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
-          gap: "12px",
+          gap: "16px",
           alignSelf: "stretch",
         }}
       >
@@ -68,7 +68,7 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
-          gap: "12px",
+          gap: "8px",
           alignSelf: "stretch",
         }}
       >
