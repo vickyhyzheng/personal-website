@@ -271,7 +271,7 @@ export const Triyo = () => {
           </ArticleHeader>
           <RoundButton
             text="View the prototype"
-            icon={EyeSmall}
+            icon={FigmaSmall}
             onClick={() => {
               window.open(
                 "https://www.figma.com/proto/eZ3W25c7M4eWe6vtpS4VKG/Triyo-artifacts?page-id=412%3A9169&type=design&node-id=412-9170&viewport=488%2C469%2C0.17&t=Y0agMACN14akvxIA-1&scaling=scale-down-width&starting-point-node-id=412%3A9170&show-proto-sidebar=1",

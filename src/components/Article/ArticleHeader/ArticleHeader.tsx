@@ -30,7 +30,9 @@ export const ArticleHeader = forwardRef(
             gap: "10px",
           }}
         >
-          <Typography variant="body1">{sectionType}</Typography>
+          <Typography variant="h6" sx={{ color: "grey.dark" }}>
+            {sectionType}
+          </Typography>
           <Typography variant="h4" sx={{ wordBreak: "break-word" }}>
             {title}
           </Typography>

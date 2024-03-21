@@ -563,7 +563,7 @@ export const BeHive = () => {
           </ArticleHeader>
           <RoundButton
             text="View the prototype"
-            icon={EyeSmall}
+            icon={FigmaSmall}
             onClick={() => {
               window.open(
                 "https://www.figma.com/proto/EgMfeAKtzf70Oh2BFEqChT/GBDA301---Product-Build?kind=proto&node-id=1300-9570&page-id=0%3A1&scaling=scale-down&starting-point-node-id=1300%3A9570&viewport=868%2C335%2C0.27",

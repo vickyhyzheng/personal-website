@@ -31,7 +31,7 @@ export const ArticlePage = ({
           display: "flex",
           flexDirection: "column",
           alignItems: "flex-start",
-          gap: 12,
+          gap: 4,
           // maxWidth: "1280px",
         }}
       >

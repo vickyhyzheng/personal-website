@@ -70,6 +70,10 @@ const ArticleEndDesktop = ({ otherArticles }: ArticleEndProps) => {
                 <u>Let's connect 😃</u>
               </strong>
             </Typography>
+            <Typography variant="body2">
+              <br />
+              Here are some more case studies in the meanwhile.
+            </Typography>
           </Box>
         </Box>
         <Box
@@ -140,6 +144,10 @@ const ArticleEndMobile = ({ otherArticles }: ArticleEndProps) => {
               <strong>
                 <u>Let's connect 😃</u>
               </strong>
+            </Typography>
+            <Typography variant="body2">
+              <br />
+              Here are some more case studies in the meanwhile.
             </Typography>
           </Box>
         </Box>

@@ -9,6 +9,7 @@ import { BeHiveCard } from "../Card/BeHiveCard"
 import { TriyoCard } from "../Card/TriyoCard"
 import { skipToSection } from "../../utils/skipToSection"
 import { BlndCard } from "../Card/BlndCard"
+import ArrowDown from "../../assets/icons/arrow-down-small.svg"
 
 interface Sidebar {
   projectMap: Record<string, Record<string, any>>
@@ -17,7 +18,7 @@ interface Sidebar {
 export const Sidebar = ({ projectMap }: Sidebar) => {
   const navigate = useNavigate()
   const intro =
-    "I'm a product designer who is passionate about creating experiences that delight the user. 🇨🇦"
+    "I’m a Canadian product designer who’s passionate about transforming ideas into delightful, user-friendly products."
 
   return (
     <Box
@@ -47,7 +48,7 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
         <Card
           variant="text"
           image={ProfileImage}
-          title="Hi 👋 I'm Vicky"
+          title="Hi, I'm Vicky"
           description="Learn more about me"
           onClick={() => navigate("/about")}
         />
@@ -72,7 +73,10 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
           alignSelf: "stretch",
         }}
       >
-        <Typography variant="h6">My Best Work 👇</Typography>
+        <Box sx={{ display: "flex", flexDirection: "row", gap: "10px" }}>
+          <Typography variant="h6">Selected Projects</Typography>
+          <img src={ArrowDown} style={{ width: 24, height: 24 }} />
+        </Box>
         <RiotCard
           onClick={() => {
             skipToSection(projectMap["riot"].ref)
