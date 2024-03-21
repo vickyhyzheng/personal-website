@@ -534,6 +534,15 @@ export const BeHive = () => {
             sectionType="Solution"
             ref={wireframesSection}
           >
+            <Box sx={{ mb: 4 }}>
+              <iframe
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                width="100%"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FEgMfeAKtzf70Oh2BFEqChT%2FGBDA301---Product-Build%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1300-9570%26viewport%3D459%252C293%252C0.13%26t%3DDsDkknJNsL1xS6kJ-1%26scaling%3Dscale-down%26starting-point-node-id%3D1300%253A9570%26mode%3Ddesign"
+                allowFullScreen
+              />
+            </Box>
             <Typography variant="body2">
               The goal of BeHIVE is to turn friends into a system for helping
               individuals build good routines and achieve self-success. We
@@ -561,17 +570,7 @@ export const BeHive = () => {
               actors.
             </Typography>
           </ArticleHeader>
-          <RoundButton
-            text="View the prototype"
-            icon={FigmaSmall}
-            onClick={() => {
-              window.open(
-                "https://www.figma.com/proto/EgMfeAKtzf70Oh2BFEqChT/GBDA301---Product-Build?kind=proto&node-id=1300-9570&page-id=0%3A1&scaling=scale-down&starting-point-node-id=1300%3A9570&viewport=868%2C335%2C0.27",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }}
-          />
+
           <img
             src={BeHiveFinal}
             width="358px"

@@ -261,6 +261,15 @@ export const Triyo = () => {
             sectionType="Solution"
             ref={wireframesSection}
           >
+            <Box sx={{ mb: 4 }}>
+              <iframe
+                style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+                width="100%"
+                height="450"
+                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FeZ3W25c7M4eWe6vtpS4VKG%2FTriyo-artifacts%3Fpage-id%3D412%253A9169%26type%3Ddesign%26node-id%3D412-9170%26viewport%3D488%252C469%252C0.17%26t%3DDPOe2q2pCU8XHAvm-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D412%253A9170%26show-proto-sidebar%3D1%26mode%3Ddesign"
+                allowFullScreen
+              />
+            </Box>
             <Typography variant="body2">
               After collecting additional feedback from marketing, development,
               and executive, we were able to design the high fidelity version of
@@ -269,17 +278,7 @@ export const Triyo = () => {
               technical limitations and we adjusted the designed accordingly.
             </Typography>
           </ArticleHeader>
-          <RoundButton
-            text="View the prototype"
-            icon={FigmaSmall}
-            onClick={() => {
-              window.open(
-                "https://www.figma.com/proto/eZ3W25c7M4eWe6vtpS4VKG/Triyo-artifacts?page-id=412%3A9169&type=design&node-id=412-9170&viewport=488%2C469%2C0.17&t=Y0agMACN14akvxIA-1&scaling=scale-down-width&starting-point-node-id=412%3A9170&show-proto-sidebar=1",
-                "_blank",
-                "noopener,noreferrer"
-              )
-            }}
-          />
+
           <img
             src={HiFi1}
             width="100%"
