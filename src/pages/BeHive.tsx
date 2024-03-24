@@ -244,37 +244,6 @@ export const BeHive = () => {
               skipToSection(wireframesSection)
             }}
           />
-          <ArticleSubsection title="Responsibilities">
-            <Box>
-              <Typography variant="body2">
-                Upon completing orientation and meeting my teams, I was able to
-                hit the ground running by joining my teams weekly rituals and
-                familiarizing myself with the projects and what needs to be
-                done. Because I had 6 weeks to work on one project at a time, it
-                was an incredibly demanding yet rewarding challenge to overcome.
-                Part of my responsibilities as a designer involved{" "}
-                <strong>
-                  researching, designing, and prototyping wireframes, as well as
-                  facilitating stakeholder feedback sessions
-                </strong>{" "}
-                across a diverse cast of roles.
-              </Typography>
-              <Typography variant="body2">
-                <br />
-                The remote model of work also enabled me to work with teams
-                across 2 timezones. My projects also gave me a variety of
-                stakeholders and constraints to work with that really made this
-                internship unique.
-              </Typography>
-            </Box>
-          </ArticleSubsection>
-          <RoundButton
-            text="Skip to takeaways"
-            icon={ArrowDown}
-            onClick={() => {
-              skipToSection(takeawaysSection)
-            }}
-          />
         </ArticleSection>
         <ArticleSection>
           <ArticleHeader
