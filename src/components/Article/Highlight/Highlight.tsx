@@ -15,7 +15,7 @@ export const Highlight = ({ icon, title, content }: HighlightProps) => {
       sx={{
         display: "flex",
         alignItems: "center",
-        p: [4, 8],
+        p: [4],
         gap: [2, 8],
         border: "4px solid black",
         borderRadius: "12px",

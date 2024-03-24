@@ -244,7 +244,7 @@ export const AboutMe = () => {
                   <br />
                   Spearheaded the design process of a B2B SAAS application and a
                   B2C transaction history feature, impacting over 200 million
-                  players and projected to save $500 million.
+                  players and projected to save $50 million.
                 </Typography>
               </Box>
             </Box>

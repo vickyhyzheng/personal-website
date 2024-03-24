@@ -321,7 +321,7 @@ export const BeHive = () => {
                 alignItems: "flex-start",
                 mt: 4,
                 mb: 8,
-                gap: 4,
+                gap: 2,
               }}
             >
               <Highlight

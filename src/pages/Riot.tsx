@@ -234,7 +234,7 @@ export const Riot = () => {
         </ArticleSection>
         <ArticleSection>
           <ArticleHeader
-            title="An incredible internship Experience"
+            title="Best Internship Ever"
             sectionType="My Experience"
           >
             <Typography variant="body2">
@@ -246,7 +246,12 @@ export const Riot = () => {
               Riot Campus was definitely a memorable adventure.
             </Typography>
           </ArticleHeader>
-          <ImageCarousel images={carouselImages} />
+          {/* <ImageCarousel images={carouselImages} /> */}
+          <img
+            src={Image7}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "64px" }}
+          />
           <ArticleSubsection title="My Teams">
             <Box>
               <Typography variant="body2">
@@ -267,6 +272,11 @@ export const Riot = () => {
               </Typography>
             </Box>
           </ArticleSubsection>
+          <img
+            src={Image2}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "64px" }}
+          />
           <ArticleSubsection title="Summer Statistics">
             <ThreeColumnTable contents={summerStatsContents1} />
             <ThreeColumnTable contents={summerStatsContents2} />
