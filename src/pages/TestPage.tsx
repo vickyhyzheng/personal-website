@@ -25,7 +25,7 @@ export const TestPage = () => {
   //   {
   //     icon: "02",
   //     title: "title",
-  //     description: "lorem ipsum", pp
+  //     description: "lorem ipsum", ppp
   //   },
   // ]
   return (
