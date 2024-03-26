@@ -1,19 +1,19 @@
-import React from "react"
-import { Sidebar } from "../components/Sidebar"
-import { Highlight } from "../components/Article/Highlight"
-import { Box, Typography } from "@mui/material"
-import { ThreeColumnTableContent } from "../components/Article/Tables/ThreeColumnTable/ThreeColumnTableItem"
-import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable/ThreeColumnTable"
-import { Card } from "../components/Card/Card"
-import RiotLogo from "../assets/images/riot-logo.png"
-import { SquareButton } from "../components/Button/SquareButton"
-import { RoundButton } from "../components/Button/RoundButton"
-import ArrowDown from "../assets/icons/arrow-down-small.svg"
-import { IconButton } from "../components/Button/IconButton"
-import HomeIcon from "../assets/icons/house-small.svg"
-import { ProjectCard } from "../components/ProjectCard"
-import RiotInternshipBanner from "../assets/images/riot-internship-banner.png"
-import { ArticleEnd } from "../components/Article/ArticleEnd"
+import React from "react";
+import { Sidebar } from "../components/Sidebar";
+import { Highlight } from "../components/Article/Highlight";
+import { Box, Typography } from "@mui/material";
+import { ThreeColumnTableContent } from "../components/Article/Tables/ThreeColumnTable/ThreeColumnTableItem";
+import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable/ThreeColumnTable";
+import { Card } from "../components/Card/Card";
+import RiotLogo from "../assets/images/riot-logo.png";
+import { SquareButton } from "../components/Button/SquareButton";
+import { RoundButton } from "../components/Button/RoundButton";
+import ArrowDown from "../assets/icons/arrow-down-small.svg";
+import { IconButton } from "../components/Button/IconButton";
+import HomeIcon from "../assets/icons/house-small.svg";
+import { ProjectCard } from "../components/ProjectCard";
+import RiotInternshipBanner from "../assets/images/riot-internship-banner.png";
+import { ArticleEnd } from "../components/Article/ArticleEnd";
 
 export const TestPage = () => {
   // const tableContents: ThreeColumnTableContent[] = [
@@ -25,7 +25,7 @@ export const TestPage = () => {
   //   {
   //     icon: "02",
   //     title: "title",
-  //     description: "lorem ipsum",
+  //     description: "lorem ipsum", pp
   //   },
   // ]
   return (
@@ -79,5 +79,5 @@ export const TestPage = () => {
       {/* <ThreeColumnTable contents={tableContents} /> */}
       {/* <>this is the home page</> */}
     </Box>
-  )
-}
+  );
+};
