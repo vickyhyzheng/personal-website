@@ -33,6 +33,7 @@ import Image5 from "../assets/images/carousel/2023-LAX-Intern-Week-4 5.png";
 import Image6 from "../assets/images/carousel/2023-LAX-Intern-Week-4 6.png";
 import Image7 from "../assets/images/carousel/2023-LAX-Intern-Week-4 7.png";
 import Image8 from "../assets/images/carousel/2023-LAX-Intern-Week-4 8.png";
+import Image9 from "../assets/images/riot-projects.png";
 import { useRef } from "react";
 import { skipToSection } from "../utils/skipToSection";
 import { usePageTitle } from "../utils/usePageTitle";
@@ -277,6 +278,11 @@ export const Riot = () => {
               </Typography>
             </Box>
           </ArticleSubsection>
+          <img
+            src={Image9}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "64px" }}
+          />
           <ArticleSubsection title="Summer Statistics">
             <ThreeColumnTable contents={summerStatsContents1} />
             <ThreeColumnTable contents={summerStatsContents2} />

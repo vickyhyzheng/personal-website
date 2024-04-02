@@ -1,39 +1,39 @@
-import { ArticlePage } from "../components/Article/ArticlePage"
-import { ArticleSection } from "../components/Article/ArticleSection"
-import { ArticleHeader } from "../components/Article/ArticleHeader"
-import EyeSmall from "../assets/icons/eye-small.svg"
-import QuestionMedium from "../assets/icons/question-mark-medium.svg"
-import MuteMedium from "../assets/icons/mute-medium.svg"
-import SearchMedium from "../assets/icons/search-medium.svg"
-import ArrowDown from "../assets/icons/arrow-down-small.svg"
-import FigmaSmall from "../assets/icons/figma-small.svg"
+import { ArticlePage } from "../components/Article/ArticlePage";
+import { ArticleSection } from "../components/Article/ArticleSection";
+import { ArticleHeader } from "../components/Article/ArticleHeader";
+import EyeSmall from "../assets/icons/eye-small.svg";
+import QuestionMedium from "../assets/icons/question-mark-medium.svg";
+import MuteMedium from "../assets/icons/mute-medium.svg";
+import SearchMedium from "../assets/icons/search-medium.svg";
+import ArrowDown from "../assets/icons/arrow-down-small.svg";
+import FigmaSmall from "../assets/icons/figma-small.svg";
 
-import CardSorting from "../assets/images/triyo-card-sorting.png"
-import OldSitemap from "../assets/images/triyo-sitemap-old.png"
-import NewSitemap from "../assets/images/triyo-sitemap-new.png"
-import NavbarRedesign from "../assets/images/triyo-navbar-redesign.png"
-import HiFi1 from "../assets/images/triyo-hifi-1.png"
-import HiFi2 from "../assets/images/triyo-hifi-2.png"
-import HiFi3 from "../assets/images/triyo-hifi-3.png"
+import CardSorting from "../assets/images/triyo-card-sorting.png";
+import OldSitemap from "../assets/images/triyo-sitemap-old.png";
+import NewSitemap from "../assets/images/triyo-sitemap-new.png";
+import NavbarRedesign from "../assets/images/triyo-navbar-redesign.png";
+import HiFi1 from "../assets/images/triyo-hifi-1.png";
+import HiFi2 from "../assets/images/triyo-hifi-2.png";
+import HiFi3 from "../assets/images/triyo-hifi-3.png";
 
-import { Box, Typography } from "@mui/material"
-import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable"
-import { TextTable } from "../components/Article/Tables/TextTable"
-import { RoundButton } from "../components/Button/RoundButton"
-import { ArticleSubsection } from "../components/ArticleSubsection"
-import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable"
-import { ArticleEnd } from "../components/Article/ArticleEnd"
+import { Box, Typography } from "@mui/material";
+import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable";
+import { TextTable } from "../components/Article/Tables/TextTable";
+import { RoundButton } from "../components/Button/RoundButton";
+import { ArticleSubsection } from "../components/ArticleSubsection";
+import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable";
+import { ArticleEnd } from "../components/Article/ArticleEnd";
 
-import TriyoBanner from "../assets/images/triyo-banner-2.png"
-import { HomeButton } from "../components/HomeButton"
-import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
-import { useRef } from "react"
-import { skipToSection } from "../utils/skipToSection"
-import { usePageTitle } from "../utils/usePageTitle"
+import TriyoBanner from "../assets/images/triyo-banner-2.png";
+import { HomeButton } from "../components/HomeButton";
+import ScrollToTopOnMount from "../components/ScrollToTopOnMount";
+import { useRef } from "react";
+import { skipToSection } from "../utils/skipToSection";
+import { usePageTitle } from "../utils/usePageTitle";
 
 export const Triyo = () => {
-  usePageTitle("Vicky Zheng | Triyo")
-  const wireframesSection = useRef<HTMLElement | null>(null)
+  usePageTitle("Vicky Zheng | Triyo");
+  const wireframesSection = useRef<HTMLElement | null>(null);
   const teamTableContents = [
     {
       title: "My Role",
@@ -71,7 +71,7 @@ export const Triyo = () => {
         </>
       ),
     },
-  ]
+  ];
   const interviewFindings = [
     {
       icon: MuteMedium,
@@ -83,7 +83,7 @@ export const Triyo = () => {
       icon: QuestionMedium,
       title: "Irrelevant pages",
       description:
-        "The use cases page was a missed opportunity to better convince users through storytelling, and was a very claustrophobic experience",
+        "The use cases page was a missed opportunity to better convince users through storytelling, and is very claustrophobic",
     },
     {
       icon: SearchMedium,
@@ -91,7 +91,7 @@ export const Triyo = () => {
       description:
         "Important information were inaccessible through the menu. They existed in tertiary pages and were very challenging to find",
     },
-  ]
+  ];
 
   const learningsContents = [
     {
@@ -106,7 +106,7 @@ export const Triyo = () => {
       description:
         "Learning about the different needs and objectives of each role, and what I can do for to make working with me more fun, was one of the most important activities I learned to do.",
     },
-  ]
+  ];
 
   return (
     <>
@@ -137,25 +137,27 @@ export const Triyo = () => {
                 "https://www.figma.com/proto/eZ3W25c7M4eWe6vtpS4VKG/Triyo-artifacts?page-id=412%3A9169&type=design&node-id=412-9170&viewport=488%2C469%2C0.17&t=Y0agMACN14akvxIA-1&scaling=scale-down-width&starting-point-node-id=412%3A9170&show-proto-sidebar=1",
                 "_blank",
                 "noopener,noreferrer"
-              )
+              );
             }}
           />
           <ArticleSubsection title="Background">
             <Box>
               <Typography variant="body2">
                 When I first joined TRIYO, an issue that the marketing
-                department was trying to overcome was that website visitors were
-                not interacting with the content. From our Google Analytics, we
-                can see that we had extremely high bounce rates, and visitors
-                seldom visit other pages to learn more about the product. Why is
-                that?
+                department was trying to overcome was that website{" "}
+                <strong>visitors were not interacting with the content.</strong>{" "}
+                From our Google Analytics, we can see that we had an{" "}
+                <strong>80% bounce rate on our landing pages</strong>, and
+                visitors on our main site seldom visit other pages to learn more
+                about the product. Why is that?
               </Typography>
               <Typography variant="body2">
                 <br />
                 For this case study, I will discuss the navigation redesign,
                 pricing page redesign, and component design activities that I
-                did as part of my internship. There were many other screens that
-                were made, but were incomplete due to the timeline I had.
+                did as part of my internship. There were many other projects
+                involved in the revamp that were made, but were incomplete due
+                to the timeline I had.
               </Typography>
             </Box>
           </ArticleSubsection>
@@ -163,7 +165,7 @@ export const Triyo = () => {
             text="Skip to wireframes"
             icon={ArrowDown}
             onClick={() => {
-              skipToSection(wireframesSection)
+              skipToSection(wireframesSection);
             }}
           />
         </ArticleSection>
@@ -173,8 +175,9 @@ export const Triyo = () => {
               We didn't have the resources to conduct user interviews formally,
               so in my free time I asked a couple of friends to go through the
               website for me. They would screen share the website, and were
-              given general goals such as "Tell me what the product is." and
-              "How does the product solve [use case]".
+              given general questions about the site content such as{" "}
+              <strong>"Tell me what the product is"</strong> and{" "}
+              <strong>"How does the product solve [use case]"</strong>.
             </Typography>
             <Typography variant="body2">
               <br />
@@ -196,16 +199,11 @@ export const Triyo = () => {
               familiar with.
             </Typography>
             <Typography variant="body2">
-              <br />
-              From the results of this activity, I was able to conclude and
-              pitch a website overhaul project.
+              From the results of this activity, I was able to pitch and receive
+              approval for a website overhaul project by the CEO and marketing
+              manager.
             </Typography>
           </ArticleSubsection>
-          <img
-            src={CardSorting}
-            width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
-          />
         </ArticleSection>
         <ArticleSection>
           <ArticleHeader title="Sitemap Revamp" sectionType="Design">
@@ -223,14 +221,17 @@ export const Triyo = () => {
             width="100%"
             style={{ borderRadius: "16px", marginBottom: "64px" }}
           />
-          <ArticleSubsection title="Revamped Sitemap">
+          <ArticleSubsection title="Updated Sitemap">
             <Typography variant="body2">
               The revamped sitemap removed all of the inaccessible tertiary
-              pages and moved them further up. Solutions were also given their
-              own individual pages to accommodate a story-telling format on how
-              Triyo's product solves the use cases. Impactful interactive
-              elements, such as the demo, were moved onto the home page to be
-              more accessible to users.
+              pages and moved them further up,{" "}
+              <strong>
+                ensuring no pages were more than 2 layers of navigation deep.
+              </strong>{" "}
+              Solutions were also given their own individual pages to
+              accommodate a story-telling format on how Triyo's product solves
+              the use cases. Impactful interactive elements, such as the demo,
+              were moved onto the home page to be more accessible to users.
             </Typography>
           </ArticleSubsection>
           <img
@@ -362,5 +363,5 @@ export const Triyo = () => {
       <ArticleEnd otherArticles={["riot", "behive"]} />
       <HomeButton />
     </>
-  )
-}
+  );
+};

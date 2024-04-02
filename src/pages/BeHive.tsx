@@ -1,49 +1,49 @@
-import { ArticlePage } from "../components/Article/ArticlePage"
-import BeHiveBanner from "../assets/images/behive-banner.png"
-import { ArticleSection } from "../components/Article/ArticleSection"
-import { ArticleHeader } from "../components/Article/ArticleHeader"
-import ShoppingLarge from "../assets/icons/shopping-large.svg"
-import FigmaSmall from "../assets/icons/figma-small.svg"
-import UsersLarge from "../assets/icons/users-large.svg"
-import FileSearchLarge from "../assets/icons/file-medium.svg"
-import GearLarge from "../assets/icons/gear-large.svg"
-import ArrowDown from "../assets/icons/arrow-down-small.svg"
-import GroupLarge from "../assets/icons/group-large.svg"
-import EyeSmall from "../assets/icons/eye-small.svg"
-import LightBulbLarge from "../assets/icons/lightbulb-large.svg"
-import DialogueMedium from "../assets/icons/dialogue-medium.svg"
-import UserVoiceMedium from "../assets/icons/user-voice-medium.svg"
-import GroupMedium from "../assets/icons/group-medium.svg"
-import CheckO from "../assets/icons/check-o-green.svg"
-import CloseO from "../assets/icons/close-o-red.svg"
+import { ArticlePage } from "../components/Article/ArticlePage";
+import BeHiveBanner from "../assets/images/behive-banner.png";
+import { ArticleSection } from "../components/Article/ArticleSection";
+import { ArticleHeader } from "../components/Article/ArticleHeader";
+import ShoppingLarge from "../assets/icons/shopping-large.svg";
+import FigmaSmall from "../assets/icons/figma-small.svg";
+import UsersLarge from "../assets/icons/users-large.svg";
+import FileSearchLarge from "../assets/icons/file-medium.svg";
+import GearLarge from "../assets/icons/gear-large.svg";
+import ArrowDown from "../assets/icons/arrow-down-small.svg";
+import GroupLarge from "../assets/icons/group-large.svg";
+import EyeSmall from "../assets/icons/eye-small.svg";
+import LightBulbLarge from "../assets/icons/lightbulb-large.svg";
+import DialogueMedium from "../assets/icons/dialogue-medium.svg";
+import UserVoiceMedium from "../assets/icons/user-voice-medium.svg";
+import GroupMedium from "../assets/icons/group-medium.svg";
+import CheckO from "../assets/icons/check-o-green.svg";
+import CloseO from "../assets/icons/close-o-red.svg";
 
-import { Box, Typography } from "@mui/material"
-import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable"
-import { TextTable } from "../components/Article/Tables/TextTable"
-import { RoundButton } from "../components/Button/RoundButton"
-import { ArticleSubsection } from "../components/ArticleSubsection"
-import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable"
-import { Highlight } from "../components/Article/Highlight"
-import { ArticleEnd } from "../components/Article/ArticleEnd"
-import BeHiveChart from "../assets/images/behive-chart.png"
-import BeHiveCompAnalysis from "../assets/images/behive-comp-analysis.png"
-import BeHiveDesignSystem from "../assets/images/behive-design-system.png"
-import BeHiveLoFi1 from "../assets/images/behive-lofi-1.png"
-import BeHiveLoFi2 from "../assets/images/behive-lofi-2.png"
-import BeHiveLoFi3 from "../assets/images/behive-lofi-3.png"
-import BeHiveFinal from "../assets/images/behive-final-product.gif"
-import BeHiveNudge from "../assets/images/behive-nudge.gif"
-import BeHiveDisappear from "../assets/images/behive-disappear.gif"
-import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
-import { HomeButton } from "../components/HomeButton"
-import { useRef } from "react"
-import { skipToSection } from "../utils/skipToSection"
-import { usePageTitle } from "../utils/usePageTitle"
+import { Box, Typography } from "@mui/material";
+import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable";
+import { TextTable } from "../components/Article/Tables/TextTable";
+import { RoundButton } from "../components/Button/RoundButton";
+import { ArticleSubsection } from "../components/ArticleSubsection";
+import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable";
+import { Highlight } from "../components/Article/Highlight";
+import { ArticleEnd } from "../components/Article/ArticleEnd";
+import BeHiveChart from "../assets/images/behive-chart.png";
+import BeHiveCompAnalysis from "../assets/images/behive-comp-analysis.png";
+import BeHiveDesignSystem from "../assets/images/behive-design-system.png";
+import BeHiveLoFi1 from "../assets/images/behive-lofi-1.png";
+import BeHiveLoFi2 from "../assets/images/behive-lofi-2.png";
+import BeHiveLoFi3 from "../assets/images/behive-lofi-3.png";
+import BeHiveFinal from "../assets/images/behive-final-product.gif";
+import BeHiveNudge from "../assets/images/behive-nudge.gif";
+import BeHiveDisappear from "../assets/images/behive-disappear.gif";
+import ScrollToTopOnMount from "../components/ScrollToTopOnMount";
+import { HomeButton } from "../components/HomeButton";
+import { useRef } from "react";
+import { skipToSection } from "../utils/skipToSection";
+import { usePageTitle } from "../utils/usePageTitle";
 
 export const BeHive = () => {
-  usePageTitle("Vicky Zheng | BeHive")
-  const takeawaysSection = useRef<HTMLElement | null>(null)
-  const wireframesSection = useRef<HTMLElement | null>(null)
+  usePageTitle("Vicky Zheng | BeHive");
+  const takeawaysSection = useRef<HTMLElement | null>(null);
+  const wireframesSection = useRef<HTMLElement | null>(null);
   const headerBody = (
     <>
       <Typography variant="body2">
@@ -63,7 +63,7 @@ export const BeHive = () => {
         school work, and take care of their personal lives.
       </Typography>
     </>
-  )
+  );
   const teamTableContents = [
     {
       title: "My Role",
@@ -83,7 +83,7 @@ export const BeHive = () => {
             <strong>Jason Nhan</strong> - Product Designer
           </Typography>
           <Typography variant="body1">
-            <strong>Christopher Sun</strong> - Product Designer
+            <strong>Christopher Lee</strong> - Product Designer
           </Typography>
         </>
       ),
@@ -107,7 +107,7 @@ export const BeHive = () => {
         </>
       ),
     },
-  ]
+  ];
   const interviewFindings = [
     {
       icon: DialogueMedium,
@@ -127,7 +127,7 @@ export const BeHive = () => {
       description:
         "71% of respondents felt motivated when helping their friends complete their own personal goals.",
     },
-  ]
+  ];
 
   const usabilityTestingContent = [
     {
@@ -148,7 +148,7 @@ export const BeHive = () => {
       description:
         "Had a lot of challenges finding where the nudge button would be",
     },
-  ]
+  ];
   const learningsContents1 = [
     {
       header: "01",
@@ -162,7 +162,7 @@ export const BeHive = () => {
       description:
         "Going into future products, I definitely feel more confident in my management abilities and more comfortable taking on projects with bigger scopes.",
     },
-  ]
+  ];
   const learningsContents2 = [
     {
       header: "03",
@@ -184,7 +184,7 @@ export const BeHive = () => {
         </>
       ),
     },
-  ]
+  ];
   return (
     <>
       <ScrollToTopOnMount />
@@ -208,7 +208,7 @@ export const BeHive = () => {
                 "https://www.figma.com/proto/EgMfeAKtzf70Oh2BFEqChT/GBDA301---Product-Build?kind=proto&node-id=1300-9570&page-id=0%3A1&scaling=scale-down&starting-point-node-id=1300%3A9570&viewport=868%2C335%2C0.27",
                 "_blank",
                 "noopener,noreferrer"
-              )
+              );
             }}
           />
           <Highlight
@@ -241,7 +241,7 @@ export const BeHive = () => {
             text="Skip to wireframes"
             icon={ArrowDown}
             onClick={() => {
-              skipToSection(wireframesSection)
+              skipToSection(wireframesSection);
             }}
           />
         </ArticleSection>
@@ -638,5 +638,5 @@ export const BeHive = () => {
       <ArticleEnd otherArticles={["riot", "triyo"]} />
       <HomeButton />
     </>
-  )
-}
+  );
+};
