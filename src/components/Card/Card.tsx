@@ -1,17 +1,22 @@
-import { Box, Typography } from "@mui/material"
-import React from "react"
-import ArrowRight from "../../assets/icons/arrow-right-small.svg"
-import { Tag } from "../Tag"
+import { Box, Typography } from "@mui/material";
+import React from "react";
+import ArrowRight from "../../assets/icons/arrow-right-small.svg";
+import { Tag } from "../Tag";
+import hoversfx from "../../assets/misc/hoversfx.mp3";
 
 interface CardProps {
-  variant: "tags" | "text"
-  image: string
-  title: string
-  description?: string
-  tags?: string[]
-  isIcon?: boolean
-  large?: boolean
-  onClick?: () => void
+  variant: "tags" | "text";
+  image: string;
+  title: string;
+  description?: string;
+  tags?: string[];
+  isIcon?: boolean;
+  large?: boolean;
+  onClick?: () => void;
+}
+
+function play() {
+  new Audio(hoversfx).play();
 }
 
 export const Card = ({
@@ -27,6 +32,7 @@ export const Card = ({
   return (
     <Box
       onClick={onClick}
+      onMouseEnter={play}
       sx={{
         borderRadius: "16px",
         background: "white",
@@ -155,5 +161,5 @@ export const Card = ({
         )}
       </Box>
     </Box>
-  )
-}
+  );
+};
