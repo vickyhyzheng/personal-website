@@ -1,45 +1,45 @@
-import { ArticlePage } from "../components/Article/ArticlePage"
-import TibbersBanner from "../assets/images/tibbers.png"
-import { ArticleSection } from "../components/Article/ArticleSection"
-import { ArticleHeader } from "../components/Article/ArticleHeader"
-import { Card } from "../components/Card"
-import CalendarSmall from "../assets/icons/calendar-small.svg"
-import EyeSmall from "../assets/icons/eye-small.svg"
-import MainMedium from "../assets/icons/main-medium.svg"
-import FoldersMedium from "../assets/icons/folders-medium.svg"
-import ShuffleMedium from "../assets/icons/shuffle-medium.svg"
-import UserVoiceMedium from "../assets/icons/user-voice-medium.svg"
-import FileMedium from "../assets/icons/file-medium.svg"
-import PaperPlaneMedium from "../assets/icons/paper-plane-medium.svg"
-import ArrowDown from "../assets/icons/arrow-down-small.svg"
-import GroupLarge from "../assets/icons/group-large.svg"
+import { ArticlePage } from "../components/Article/ArticlePage";
+import TibbersBanner from "../assets/images/tibbers.png";
+import { ArticleSection } from "../components/Article/ArticleSection";
+import { ArticleHeader } from "../components/Article/ArticleHeader";
+import { Card } from "../components/Card";
+import CalendarSmall from "../assets/icons/calendar-small.svg";
+import EyeSmall from "../assets/icons/eye-small.svg";
+import MainMedium from "../assets/icons/main-medium.svg";
+import FoldersMedium from "../assets/icons/folders-medium.svg";
+import ShuffleMedium from "../assets/icons/shuffle-medium.svg";
+import UserVoiceMedium from "../assets/icons/user-voice-medium.svg";
+import FileMedium from "../assets/icons/file-medium.svg";
+import PaperPlaneMedium from "../assets/icons/paper-plane-medium.svg";
+import ArrowDown from "../assets/icons/arrow-down-small.svg";
+import GroupLarge from "../assets/icons/group-large.svg";
 
-import { Box, Typography } from "@mui/material"
-import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable"
-import { TextTable } from "../components/Article/Tables/TextTable"
-import { RoundButton } from "../components/Button/RoundButton"
-import { ArticleSubsection } from "../components/ArticleSubsection"
-import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable"
-import { Highlight } from "../components/Article/Highlight"
-import { ArticleEnd } from "../components/Article/ArticleEnd"
-import { HomeButton } from "../components/HomeButton"
-import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
-import ImageCarousel from "../components/ImageCarousel"
-import Image1 from "../assets/images/carousel/2023-LAX-Intern-Week-4 1.png"
-import Image2 from "../assets/images/carousel/2023-LAX-Intern-Week-4 2.png"
-import Image3 from "../assets/images/carousel/2023-LAX-Intern-Week-4 3.png"
-import Image4 from "../assets/images/carousel/2023-LAX-Intern-Week-4 4.png"
-import Image5 from "../assets/images/carousel/2023-LAX-Intern-Week-4 5.png"
-import Image6 from "../assets/images/carousel/2023-LAX-Intern-Week-4 6.png"
-import Image7 from "../assets/images/carousel/2023-LAX-Intern-Week-4 7.png"
-import Image8 from "../assets/images/carousel/2023-LAX-Intern-Week-4 8.png"
-import { useRef } from "react"
-import { skipToSection } from "../utils/skipToSection"
-import { usePageTitle } from "../utils/usePageTitle"
+import { Box, Typography } from "@mui/material";
+import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable";
+import { TextTable } from "../components/Article/Tables/TextTable";
+import { RoundButton } from "../components/Button/RoundButton";
+import { ArticleSubsection } from "../components/ArticleSubsection";
+import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable";
+import { Highlight } from "../components/Article/Highlight";
+import { ArticleEnd } from "../components/Article/ArticleEnd";
+import { HomeButton } from "../components/HomeButton";
+import ScrollToTopOnMount from "../components/ScrollToTopOnMount";
+import ImageCarousel from "../components/ImageCarousel";
+import Image1 from "../assets/images/carousel/2023-LAX-Intern-Week-4 1.png";
+import Image2 from "../assets/images/carousel/2023-LAX-Intern-Week-4 2.png";
+import Image3 from "../assets/images/carousel/2023-LAX-Intern-Week-4 3.png";
+import Image4 from "../assets/images/carousel/2023-LAX-Intern-Week-4 4.png";
+import Image5 from "../assets/images/carousel/2023-LAX-Intern-Week-4 5.png";
+import Image6 from "../assets/images/carousel/2023-LAX-Intern-Week-4 6.png";
+import Image7 from "../assets/images/carousel/2023-LAX-Intern-Week-4 7.png";
+import Image8 from "../assets/images/carousel/2023-LAX-Intern-Week-4 8.png";
+import { useRef } from "react";
+import { skipToSection } from "../utils/skipToSection";
+import { usePageTitle } from "../utils/usePageTitle";
 
 export const Riot = () => {
-  usePageTitle("Vicky Zheng | Riot")
-  const takeawaysSection = useRef<HTMLElement | null>(null)
+  usePageTitle("Vicky Zheng | Riot");
+  const takeawaysSection = useRef<HTMLElement | null>(null);
 
   const carouselImages = [
     Image1,
@@ -50,9 +50,9 @@ export const Riot = () => {
     Image6,
     Image7,
     Image8,
-  ]
+  ];
   const mediumLink =
-    "https://medium.com/riot-games-ux-design/my-ux-design-internship-with-riot-games-d5efca21314c"
+    "https://medium.com/riot-games-ux-design/my-ux-design-internship-with-riot-games-d5efca21314c";
   const headerBody = (
     <>
       <Typography variant="body2">
@@ -75,20 +75,20 @@ export const Riot = () => {
         how I have grown as a designer during my time with Riot.
       </Typography>
     </>
-  )
+  );
   const teamTableContents = [
     {
       title: "My Role",
       description: "UX/UI Design Intern",
     },
     {
-      title: "My Team",
+      title: "My Teams",
       description: (
         <>
-          <Typography variant="body1">1 manager</Typography>
-          <Typography variant="body1">2 design mentors</Typography>
-          <Typography variant="body1">1 project manager</Typography>
-          <Typography variant="body1">6 developers</Typography>
+          <Typography variant="body1">Content Delivery Team</Typography>
+          <Typography variant="body1">Payments Team</Typography>
+          <Typography variant="body1">Player Identity Team</Typography>
+          <Typography variant="body1">Player Platform Department</Typography>
         </>
       ),
     },
@@ -97,31 +97,31 @@ export const Riot = () => {
       description: (
         <>
           <Typography variant="body1" sx={{ display: "list-item" }}>
-            Facilitating stakeholder feedback
+            Figma and Variables
           </Typography>
           <Typography variant="body1" sx={{ display: "list-item" }}>
-            Prototyping & interaction design
+            Adobe After Effects
           </Typography>
           <Typography variant="body1" sx={{ display: "list-item" }}>
-            Document handoff (developers and visual designers)
+            Google Suite (documentation)
           </Typography>
           <Typography variant="body1" sx={{ display: "list-item" }}>
-            A/B Testing and usability testing
+            Miro and Figjam
           </Typography>
         </>
       ),
     },
-  ]
+  ];
   const summerStatsContents1 = [
     { icon: MainMedium, title: "4+ Features Designed" },
     { icon: FoldersMedium, title: "2 Project Files Handed Off" },
     { icon: ShuffleMedium, title: "3+ User Flows Designed" },
-  ]
+  ];
   const summerStatsContents2 = [
     { icon: UserVoiceMedium, title: "16+ Feedback Sessions" },
     { icon: FileMedium, title: "6 A/B Tests Conducted" },
     { icon: PaperPlaneMedium, title: "1 Feature In Development" },
-  ]
+  ];
   const learningsContents1 = [
     {
       header: "01",
@@ -135,7 +135,7 @@ export const Riot = () => {
       description:
         "Involving a variety of people from different disciplines and teams can help you identify problems early on and make a product that is both exciting to use (and make if you're an engineer).",
     },
-  ]
+  ];
   const learningsContents2 = [
     {
       header: "03",
@@ -156,14 +156,14 @@ export const Riot = () => {
         </>
       ),
     },
-  ]
+  ];
 
   return (
     <>
       <ScrollToTopOnMount />
       <ArticlePage
         title={"Riot Games"}
-        subtitle={"A summer of unforgettable experiences"}
+        subtitle={"Building some super cool things with Rioters"}
         bannerImage={TibbersBanner}
       >
         <ArticleSection>
@@ -185,7 +185,7 @@ export const Riot = () => {
                   "https://calendly.com/vyzhng/vicky-zheng-1-1",
                   "_blank",
                   "noopener,noreferrer"
-                )
+                );
               }}
             />
           </Box>
@@ -197,7 +197,7 @@ export const Riot = () => {
             text="Read the medium article"
             icon={EyeSmall}
             onClick={() => {
-              window.open(mediumLink, "_blank", "noopener,noferrer") // noopener,noreferrer makes this open in a new window
+              window.open(mediumLink, "_blank", "noopener,noferrer"); // noopener,noreferrer makes this open in a new window
             }}
           />
           <ArticleSubsection title="Responsibilities">
@@ -228,55 +228,55 @@ export const Riot = () => {
             text="Skip to takeaways"
             icon={ArrowDown}
             onClick={() => {
-              skipToSection(takeawaysSection, false)
+              skipToSection(takeawaysSection, true);
             }}
           />
         </ArticleSection>
         <ArticleSection>
-          <ArticleHeader
-            title="Best Internship Ever"
-            sectionType="My Experience"
-          >
+          <ArticleHeader title="Riot's Player Platforms" sectionType="My Teams">
             <Typography variant="body2">
-              For a week we were flown down to Riot's LAX campus and got to
-              enjoy all the perks Riot has to offer. This was actually my first
-              time down in the states and was a week full of events and
-              escapades. From eating free food every day at NOMS with fellow
-              interns to celebrating my birthday with Riot, exploring LA and
-              Riot Campus was definitely a memorable adventure.
+              I got to{" "}
+              <strong>work across 2 teams on 2 different projects</strong> under
+              Riot's Player Platform department for the duration of my
+              internship. My first team was based in Dublin, Ireland and was 5
+              hours ahead of me while my second team was based in LA and was 3
+              hours behind me.
+            </Typography>
+            <Typography variant="body2">
+              <br />
+              Working between timezones was a very interesting challenge that I
+              was able to overcome because of the awesome personalities in my
+              teams. This also meant that I had a lot of independent time to
+              take initiative while my design mentors were gone, which really
+              enabled me to gain the courage to reach out to other designers for
+              feedback and resources by myself.
             </Typography>
           </ArticleHeader>
           {/* <ImageCarousel images={carouselImages} /> */}
-          <img
-            src={Image7}
-            width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
-          />
-          <ArticleSubsection title="My Teams">
-            <Box>
-              <Typography variant="body2">
-                I got to{" "}
-                <strong>work across 2 teams on 2 different projects</strong> for
-                the duration of my internship. My first team was based in
-                Dublin, Ireland and was 5 hours ahead of me while my second team
-                was based in LA and was 3 hours behind me.
-              </Typography>
-              <Typography variant="body2">
-                <br />
-                Working between timezones was a very interesting challenge that
-                I was able to overcome because of the awesome personalities in
-                my teams. This also meant that I had a lot of independent time
-                to take initiative while my design mentors were gone, which
-                really enabled me to gain the courage to reach out to other
-                designers for feedback and resources by myself.
-              </Typography>
-            </Box>
-          </ArticleSubsection>
           <img
             src={Image2}
             width="100%"
             style={{ borderRadius: "16px", marginBottom: "64px" }}
           />
+          <ArticleSubsection title="My Projects">
+            <Box>
+              <Typography variant="body2">
+                Player Platform projects are created on the idea that game teams
+                should just focus on game play. Everything else that could be
+                reused by game teams, such as game client, content delivery,
+                match-making algorithms, payments processing, player
+                registration, etc. was done by Player Platforms.
+              </Typography>
+              <Typography variant="body2">
+                <br />I worked across 2 commerce projects with the content
+                delivery team and the payments team, and created a white label
+                content management tool to be used by all game teams at Riot and
+                a Riot-wide transaction history interface that services over 200
+                million users. Unfortunately, my projects are currently still in
+                development or cannot be shown publicly.
+              </Typography>
+            </Box>
+          </ArticleSubsection>
           <ArticleSubsection title="Summer Statistics">
             <ThreeColumnTable contents={summerStatsContents1} />
             <ThreeColumnTable contents={summerStatsContents2} />
@@ -301,7 +301,7 @@ export const Riot = () => {
                   "https://calendly.com/vyzhng/vicky-zheng-1-1",
                   "_blank",
                   "noopener,noreferrer"
-                )
+                );
               }}
             />
           </Box>
@@ -314,8 +314,8 @@ export const Riot = () => {
               When my internship came to a close, I offered to write about my
               internship experiences for aspiring future UX interns at Riot.
               Through recounting the events of this summer, I was able to
-              reflect on my experiences. There were many things I learned during
-              my time at Riot as a result of being able to speak with so many
+              reflect on my Summer. There were many things I learned during my
+              time at Riot as a result of being able to speak with so many
               people from different roles and backgrounds, but my top 4
               takeaways are as follows.
             </Typography>
@@ -329,5 +329,5 @@ export const Riot = () => {
       <ArticleEnd otherArticles={["behive", "triyo"]} />
       <HomeButton />
     </>
-  )
-}
+  );
+};
