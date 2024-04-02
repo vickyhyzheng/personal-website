@@ -27,6 +27,7 @@ import { Highlight } from "../components/Article/Highlight";
 import { ArticleEnd } from "../components/Article/ArticleEnd";
 import BeHiveChart from "../assets/images/behive-chart.png";
 import BeHiveCompAnalysis from "../assets/images/behive-comp-analysis.png";
+import BeHiveFindings from "../assets/images/behive-findings.png";
 import BeHiveDesignSystem from "../assets/images/behive-design-system.png";
 import BeHiveLoFi1 from "../assets/images/behive-lofi-1.png";
 import BeHiveLoFi2 from "../assets/images/behive-lofi-2.png";
@@ -47,9 +48,9 @@ export const BeHive = () => {
   const headerBody = (
     <>
       <Typography variant="body2">
-        Completing personal goals is difficult because many of us lack
-        meaningful systems in place to hold ourselves accountable to the goals
-        we set. There are many in-market solutions but they provide{" "}
+        Achieving personal goals is difficult because many of us lack meaningful
+        systems in place to hold ourselves accountable to the goals we set.
+        There are many in-market solutions but they provide{" "}
         <strong>
           weak internal motivation, or heavily rely an individual's discipline
           to help users achieve their goals and build good habits.
@@ -58,9 +59,10 @@ export const BeHive = () => {
       <Typography variant="body2">
         <br />
         It becomes especially challenging for international Chinese students to
-        find systems that they can use to also hold themselves accountable when
-        balancing opportunities to explore their new environment, stay on top of
-        school work, and take care of their personal lives.
+        find support systems that they can use to also hold themselves
+        accountable when balancing opportunities to explore their new
+        environment, stay on top of school work, and take care of their personal
+        lives.
       </Typography>
     </>
   );
@@ -191,7 +193,7 @@ export const BeHive = () => {
       <ArticlePage
         title={"BeHIVE"}
         subtitle={
-          "Designing a community focused mobile application for helping students stay accountable"
+          "Designing a community focused mobile application for helping international students stay accountable"
         }
         bannerImage={BeHiveBanner}
       >
@@ -264,7 +266,11 @@ export const BeHive = () => {
               </Typography>
             </>
           </ArticleHeader>
-          <ThreeColumnTable contents={interviewFindings} />
+          <img
+            src={BeHiveFindings}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "64px" }}
+          />
           <ArticleSubsection title="User Journey mapping">
             <Typography variant="body2">
               User journey mapping was also used to identify touch points our

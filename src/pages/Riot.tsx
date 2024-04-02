@@ -234,23 +234,28 @@ export const Riot = () => {
           />
         </ArticleSection>
         <ArticleSection>
-          <ArticleHeader title="Riot's Player Platforms" sectionType="My Teams">
+          <ArticleHeader title="Design At Riot" sectionType="My Teams">
             <Typography variant="body2">
               I got to{" "}
-              <strong>work across 2 teams on 2 different projects</strong> under
-              Riot's Player Platform department for the duration of my
-              internship. My first team was based in Dublin, Ireland and was 5
-              hours ahead of me while my second team was based in LA and was 3
-              hours behind me.
+              <strong>work across 2 teams on 2 different projects</strong> at
+              Riot's Player Platform department under the commerce initiative
+              for my internship. My first team was based in Dublin, Ireland and
+              was 5 hours ahead of me while my second team was based in LA and
+              was 3 hours behind me. I had a lot of independent time to take
+              initiative while my design mentors were gone, which really
+              encouraged me to reach out to other Rioters for feedback and
+              resources by myself.
             </Typography>
             <Typography variant="body2">
               <br />
-              Working between timezones was a very interesting challenge that I
-              was able to overcome because of the awesome personalities in my
-              teams. This also meant that I had a lot of independent time to
-              take initiative while my design mentors were gone, which really
-              enabled me to gain the courage to reach out to other designers for
-              feedback and resources by myself.
+              Riot's design philosophy is to always put players first and it is
+              embedded deeply in Riot's work culture regardless of your role. I
+              always had to prepare research to answer the frequently asked
+              question <strong>"but how does it benefit the user?"</strong>.
+              Learning how to research and articulate the user stories, legal
+              requirements, usability testing results, and existing pain points
+              to explain my design decision making was paramount to succeeding
+              in this role.
             </Typography>
           </ArticleHeader>
           {/* <ImageCarousel images={carouselImages} /> */}
@@ -269,12 +274,16 @@ export const Riot = () => {
                 registration, etc. was done by Player Platforms.
               </Typography>
               <Typography variant="body2">
-                <br />I worked across 2 commerce projects with the content
-                delivery team and the payments team, and created a white label
-                content management tool to be used by all game teams at Riot and
-                a Riot-wide transaction history interface that services over 200
-                million users. Unfortunately, my projects are currently still in
-                development or cannot be shown publicly.
+                <br />I worked across{" "}
+                <strong>
+                  2 commerce projects with the content delivery team and the
+                  payments team
+                </strong>{" "}
+                to create a white label content management tool to be used by
+                all game teams at Riot and a Riot-wide transaction history
+                interface that services over 200 million users. Unfortunately,
+                my projects are currently still in development or cannot be
+                shown publicly.
               </Typography>
             </Box>
           </ArticleSubsection>
