@@ -1,8 +1,8 @@
-import { TypographyOptions } from "@mui/material/styles/createTypography"
+import { TypographyOptions } from "@mui/material/styles/createTypography";
 
 const sharedTypographyStyles = {
   color: "#1B1B1B",
-}
+};
 
 export const fonts: TypographyOptions = {
   fontFamily: '"Archivo Black", "Calibri", sans-serif',
@@ -25,13 +25,13 @@ export const fonts: TypographyOptions = {
     ...sharedTypographyStyles,
   },
   h4: {
-    fontSize: "64px",
+    fontSize: "44px",
     fontFamily: '"Calibri", sans-serif',
     fontWeight: 700,
     ...sharedTypographyStyles,
   },
   h5: {
-    fontSize: "44px",
+    fontSize: "32px",
     fontFamily: '"Calibri", sans-serif',
     fontWeight: 700,
     ...sharedTypographyStyles,
@@ -49,7 +49,7 @@ export const fonts: TypographyOptions = {
     ...sharedTypographyStyles,
   },
   body2: {
-    fontSize: "18px",
+    fontSize: "20px",
     fontFamily: '"Calibri", sans-serif',
     lineHeight: "150%",
     ...sharedTypographyStyles,
@@ -67,4 +67,4 @@ export const fonts: TypographyOptions = {
     lineHeight: "normal",
     ...sharedTypographyStyles,
   },
-}
+};

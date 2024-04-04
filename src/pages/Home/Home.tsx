@@ -1,18 +1,18 @@
-import React from "react"
+import React from "react";
 
-import { Box } from "@mui/material"
-import { Sidebar } from "../../components/Sidebar"
-import { ProjectCard } from "../../components/ProjectCard"
-import { useNavigate } from "react-router-dom"
-import { usePageTitle } from "../../utils/usePageTitle"
-import { useProjectMapping } from "../../utils/projectMapping"
-import { Experience } from "../../constants/experienceConstants"
+import { Box } from "@mui/material";
+import { Sidebar } from "../../components/Sidebar";
+import { ProjectCard } from "../../components/ProjectCard";
+import { useNavigate } from "react-router-dom";
+import { usePageTitle } from "../../utils/usePageTitle";
+import { useProjectMapping } from "../../utils/projectMapping";
+import { Experience } from "../../constants/experienceConstants";
 
 export const Home = () => {
-  usePageTitle("Vicky Zheng | Home")
-  const navigate = useNavigate()
-  const { projectMap } = useProjectMapping()
-  const projects: Experience[] = ["riot", "behive", "triyo", "blnd"]
+  usePageTitle("Home");
+  const navigate = useNavigate();
+  const { projectMap } = useProjectMapping();
+  const projects: Experience[] = ["riot", "behive", "triyo", "blnd"];
 
   return (
     <Box
@@ -41,7 +41,7 @@ export const Home = () => {
           }}
         >
           {projects.map((projectString) => {
-            const project = projectMap[projectString]
+            const project = projectMap[projectString];
             return (
               <ProjectCard
                 key={project.title}
@@ -52,10 +52,10 @@ export const Home = () => {
                 onClick={() => navigate(project.link)}
                 ref={project.ref}
               />
-            )
+            );
           })}
         </Box>
       </Box>
     </Box>
-  )
-}
+  );
+};

@@ -14,7 +14,7 @@ import ProfileImage from "../../assets/images/face.png"
 import { SquareButton } from "../../components/Button/SquareButton"
 
 export const HomeMobile = () => {
-  usePageTitle("Vicky Zheng | Home")
+  usePageTitle("Vicky Zheng | Mobile")
   const navigate = useNavigate()
   const riotRef = useRef<HTMLElement | null>(null)
   const behiveRef = useRef<HTMLElement | null>(null)

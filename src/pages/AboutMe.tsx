@@ -1,19 +1,19 @@
-import { Box, Link, Typography } from "@mui/material"
-import React from "react"
-import AboutImage from "../assets/images/about-image.png"
-import { SquareButton } from "../components/Button/SquareButton"
-import { useDesktop } from "../utils/useDesktop"
-import { usePageTitle } from "../utils/usePageTitle"
-import { HomeButton } from "../components/HomeButton"
-import GroupPic from "../assets/images/group-pic.png"
-import Dog from "../assets/images/dog.png"
-import Plants from "../assets/images/plants.png"
-import Coding from "../assets/images/code.png"
-import { ArticleEnd } from "../components/Article/ArticleEnd"
+import { Box, Link, Typography } from "@mui/material";
+import React from "react";
+import AboutImage from "../assets/images/about-image.png";
+import { SquareButton } from "../components/Button/SquareButton";
+import { useDesktop } from "../utils/useDesktop";
+import { usePageTitle } from "../utils/usePageTitle";
+import { HomeButton } from "../components/HomeButton";
+import GroupPic from "../assets/images/group-pic.png";
+import Dog from "../assets/images/dog.png";
+import Plants from "../assets/images/plants.png";
+import Coding from "../assets/images/code.png";
+import { ArticleEnd } from "../components/Article/ArticleEnd";
 
 export const AboutMe = () => {
-  usePageTitle("Vicky Zheng | About")
-  const { isDesktop } = useDesktop()
+  usePageTitle("About Me");
+  const { isDesktop } = useDesktop();
   return (
     <>
       <Box
@@ -153,16 +153,16 @@ export const AboutMe = () => {
                 <Typography variant="body2">
                   Collaboration is part of my design DNA and I’ve made my best
                   work when working with a multidisciplinary team. I love
-                  talking so I’m always looking for opportunities to learn about
-                  the world so I can infodump at the watercooler.
+                  talking and I’m always looking for opportunities to learn
+                  about the world so I can infodump at the watercooler.
                 </Typography>
                 <Typography variant="body2">
                   <br />I believe that any problem is an interesting problem
-                  when you start chatting with users and making an effort to
-                  understand the problem space . As a result, my interests cover
-                  an ever expanding list from logistics service design,
-                  healthcare solutions, enterprise products, and developer
-                  tools.
+                  when you start asking questions and making an effort to
+                  understand the problem space. I collect interesting tidbits of
+                  knowledge that cover an ever expanding list from logistics
+                  service design, healthcare solutions, enterprise products,
+                  developer tools, and many many more.
                 </Typography>
               </Box>
             </Box>
@@ -209,7 +209,7 @@ export const AboutMe = () => {
                       "https://www.figma.com/proto/frfw9yw7gP3hc1jsbHeDXv/Variables-Workshop?type=design&node-id=1-122&t=lAc33t6RPNb5c7X5-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A122&mode=design",
                       "_blank",
                       "noopener,noreferrer"
-                    )
+                    );
                   }}
                 >
                   <strong>
@@ -399,5 +399,5 @@ export const AboutMe = () => {
       </Box>
       <ArticleEnd otherArticles={["behive", "triyo"]} />
     </>
-  )
-}
+  );
+};

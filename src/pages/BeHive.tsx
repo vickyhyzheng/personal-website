@@ -136,19 +136,19 @@ export const BeHive = () => {
       icon: CheckO,
       title: "Adding a task",
       description:
-        "The interviewees were able to navigate this task successfully and found adding tasks to be intuitive and easy to accomplish.",
+        "The participants were able to complete this task and found it intuitive and easy to use.",
     },
     {
       icon: CheckO,
       title: "Making a post",
       description:
-        "Intuitive, would like a warning about 24hr expiration to be more visible",
+        "Also intuitive, would like a warning about 24hr expiration to be more visible",
     },
     {
       icon: CloseO,
       title: "Sending a nudge",
       description:
-        "Had a lot of challenges finding where the nudge button would be",
+        "Participants had a lot of challenges finding where the nudge button would be",
     },
   ];
   const learningsContents1 = [
@@ -175,13 +175,9 @@ export const BeHive = () => {
             Another thing I would've liked the opportunity to improve on was my
             expressive design capabilities. I felt that our app could have
             definitely been more vibrant, and I definitely focused on function
-            over aesthetics with this project.
-          </Typography>
-          <Typography variant="body2">
-            <br />
-            If I had more time to sit down with this project again, I would
-            definitely want to try and breathe more life and personality into
-            the branding.
+            over aesthetics with this project. If I had more time to sit down
+            with this project again, I would definitely want to try and breathe
+            more life and personality into the branding.
           </Typography>
         </>
       ),
