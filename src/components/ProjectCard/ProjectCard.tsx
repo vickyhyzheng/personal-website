@@ -1,18 +1,14 @@
-import { Box, Typography } from "@mui/material";
-import React, { forwardRef, ForwardedRef } from "react";
-import ArrowRight from "../../assets/icons/arrow-right-small.svg";
-import hoversfx from "../../assets/misc/hoversfx.mp3";
+import { Box, Typography } from "@mui/material"
+import React, { forwardRef, ForwardedRef } from "react"
+import ArrowRight from "../../assets/icons/arrow-right-small.svg"
+import hoversfx from "../../assets/misc/hoversfx.mp3"
 
 interface ProjectCardProps {
-  image: string;
-  startDate: string;
-  endDate: string;
-  title: string;
-  onClick: () => void;
-}
-
-function play() {
-  new Audio(hoversfx).play();
+  image: string
+  startDate: string
+  endDate: string
+  title: string
+  onClick: () => void
 }
 
 export const ProjectCard = forwardRef(
@@ -20,12 +16,11 @@ export const ProjectCard = forwardRef(
     { image, startDate, endDate, title, onClick }: ProjectCardProps,
     ref: ForwardedRef<any>
   ) => {
-    const dateString = `${startDate} - ${endDate}`;
+    const dateString = `${startDate} - ${endDate}`
     return (
       <Box
         className="noselect"
         onClick={onClick}
-        onMouseEnter={play}
         ref={ref}
         sx={{
           display: "flex",
@@ -100,6 +95,6 @@ export const ProjectCard = forwardRef(
           </Box>
         </Box>
       </Box>
-    );
+    )
   }
-);
+)

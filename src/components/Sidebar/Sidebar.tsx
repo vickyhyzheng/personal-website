@@ -54,11 +54,24 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
         />
         <Box>
           <Typography variant="body1">{intro}</Typography>
-          <Typography variant="body1">
-            Previously UX at{" "}
-            <a href="https://riotgames.com/">
-              <strong>Riot Games</strong>
-            </a>
+          <Typography display="inline" variant="body1">
+            Preivously UX at{" "}
+          </Typography>
+          <Typography
+            display="inline"
+            variant="body1"
+            sx={{ "&:hover": { cursor: "pointer" } }}
+            onClick={() => {
+              window.open(
+                "https://riotgames.com/",
+                "_blank",
+                "noopener,noreferrer"
+              )
+            }}
+          >
+            <strong>
+              <u>Riot Games</u>
+            </strong>
           </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "flex-start", gap: 3 }}>

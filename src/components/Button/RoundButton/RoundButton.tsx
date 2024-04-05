@@ -1,11 +1,16 @@
 import { Box, Typography } from "@mui/material"
 import React from "react"
 import { useDesktop } from "../../../utils/useDesktop"
+import hoversfx from "../../../assets/misc/hoversfx.mp3"
 
 interface RoundButtonProps {
   text: string
   icon: string
   onClick: () => void
+}
+
+function play() {
+  new Audio(hoversfx).play()
 }
 
 export const RoundButton = ({ text, icon, onClick }: RoundButtonProps) => {
@@ -14,6 +19,7 @@ export const RoundButton = ({ text, icon, onClick }: RoundButtonProps) => {
     <Box
       className="noselect"
       onClick={onClick}
+      onMouseEnter={play}
       sx={{
         display: "flex",
         py: "16px",
