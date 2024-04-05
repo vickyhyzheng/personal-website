@@ -1,15 +1,21 @@
 import { Box } from "@mui/material"
 import React from "react"
+import hoversfx from "../../../assets/misc/hoversfx.mp3"
 
 interface IconButtonProps {
   icon: string
   onClick: () => void
 }
 
+function play() {
+  new Audio(hoversfx).play()
+}
+
 export const IconButton = ({ icon, onClick }: IconButtonProps) => {
   return (
     <Box
       onClick={onClick}
+      onMouseEnter={play}
       sx={{
         display: "flex",
         width: 64,
