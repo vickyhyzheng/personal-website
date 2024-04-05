@@ -1,8 +1,8 @@
-import { TypographyOptions } from "@mui/material/styles/createTypography";
+import { TypographyOptions } from "@mui/material/styles/createTypography"
 
 const sharedTypographyStyles = {
   color: "#1B1B1B",
-};
+}
 
 export const fonts: TypographyOptions = {
   fontFamily: '"Archivo Black", "Calibri", sans-serif',
@@ -60,11 +60,11 @@ export const fonts: TypographyOptions = {
     ...sharedTypographyStyles,
   },
   button: {
-    fontSize: "24px",
+    fontSize: "20px",
     fontFamily: '"Calibri", sans-serif',
     fontStyle: "normal",
     textTransform: "none",
     lineHeight: "normal",
     ...sharedTypographyStyles,
   },
-};
+}
