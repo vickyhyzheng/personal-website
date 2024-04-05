@@ -265,7 +265,7 @@ export const BeHive = () => {
           <img
             src={BeHiveFindings}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="User Journey mapping">
             <Typography variant="body2">
@@ -291,7 +291,7 @@ export const BeHive = () => {
           <img
             src={BeHiveChart}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="Competitive Analysis">
             <Typography variant="body2">
@@ -308,7 +308,7 @@ export const BeHive = () => {
           <img
             src={BeHiveCompAnalysis}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="Research Insights">
             <Typography variant="body2">
@@ -444,7 +444,7 @@ export const BeHive = () => {
           <img
             src={BeHiveDesignSystem}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
         </ArticleSection>
         <ArticleSection>
@@ -462,7 +462,7 @@ export const BeHive = () => {
           <img
             src={BeHiveLoFi1}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <Box
             sx={{
@@ -491,12 +491,12 @@ export const BeHive = () => {
           <img
             src={BeHiveLoFi2}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <img
             src={BeHiveLoFi3}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
         </ArticleSection>
         <ArticleSection>
@@ -547,7 +547,7 @@ export const BeHive = () => {
             width="358px"
             style={{
               borderRadius: "16px",
-              marginBottom: "64px",
+              marginBottom: "16px",
               alignSelf: "center",
             }}
           />
