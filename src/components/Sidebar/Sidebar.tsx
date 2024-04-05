@@ -1,24 +1,24 @@
-import { Box, Typography } from "@mui/material";
-import React from "react";
-import { Card } from "../Card";
-import ProfileImage from "../../assets/images/pfp.png";
-import { useNavigate } from "react-router-dom";
-import { SquareButton } from "../Button/SquareButton";
-import { RiotCard } from "../Card/RiotCard";
-import { BeHiveCard } from "../Card/BeHiveCard";
-import { TriyoCard } from "../Card/TriyoCard";
-import { skipToSection } from "../../utils/skipToSection";
-import { BlndCard } from "../Card/BlndCard";
-import ArrowDown from "../../assets/icons/arrow-down-small.svg";
+import { Box, Typography } from "@mui/material"
+import React from "react"
+import { Card } from "../Card"
+import ProfileImage from "../../assets/images/pfp.png"
+import { useNavigate } from "react-router-dom"
+import { SquareButton } from "../Button/SquareButton"
+import { RiotCard } from "../Card/RiotCard"
+import { BeHiveCard } from "../Card/BeHiveCard"
+import { TriyoCard } from "../Card/TriyoCard"
+import { skipToSection } from "../../utils/skipToSection"
+import { BlndCard } from "../Card/BlndCard"
+import ArrowDown from "../../assets/icons/arrow-down-small.svg"
 
 interface Sidebar {
-  projectMap: Record<string, Record<string, any>>;
+  projectMap: Record<string, Record<string, any>>
 }
 
 export const Sidebar = ({ projectMap }: Sidebar) => {
-  const navigate = useNavigate();
+  const navigate = useNavigate()
   const intro =
-    "I’m a Canadian product designer who’s passionate about transforming ideas into delightful, user-friendly products.";
+    "I’m a Canadian product designer who’s passionate about transforming ideas into delightful and inclusive products."
 
   return (
     <Box
@@ -54,6 +54,12 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
         />
         <Box>
           <Typography variant="body1">{intro}</Typography>
+          <Typography variant="body1">
+            Previously UX at{" "}
+            <a href="https://riotgames.com/">
+              <strong>Riot Games</strong>
+            </a>
+          </Typography>
         </Box>
         <Box sx={{ display: "flex", alignItems: "flex-start", gap: 3 }}>
           <SquareButton
@@ -79,22 +85,22 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
         </Box>
         <RiotCard
           onClick={() => {
-            skipToSection(projectMap["riot"].ref);
+            skipToSection(projectMap["riot"].ref)
           }}
         />
         <BeHiveCard
           onClick={() => {
-            skipToSection(projectMap["behive"].ref);
+            skipToSection(projectMap["behive"].ref)
           }}
         />
         <TriyoCard
           onClick={() => {
-            skipToSection(projectMap["triyo"].ref);
+            skipToSection(projectMap["triyo"].ref)
           }}
         />
         <BlndCard
           onClick={() => {
-            skipToSection(projectMap["blnd"].ref);
+            skipToSection(projectMap["blnd"].ref)
           }}
         />
       </Box>
@@ -127,5 +133,5 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
         />
       </Box> */}
     </Box>
-  );
-};
+  )
+}

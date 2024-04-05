@@ -1,19 +1,19 @@
-import { Box, Link, Typography } from "@mui/material";
-import React from "react";
-import AboutImage from "../assets/images/about-image.png";
-import { SquareButton } from "../components/Button/SquareButton";
-import { useDesktop } from "../utils/useDesktop";
-import { usePageTitle } from "../utils/usePageTitle";
-import { HomeButton } from "../components/HomeButton";
-import GroupPic from "../assets/images/group-pic.png";
-import Dog from "../assets/images/dog.png";
-import Plants from "../assets/images/plants.png";
-import Coding from "../assets/images/code.png";
-import { ArticleEnd } from "../components/Article/ArticleEnd";
+import { Box, Link, Typography } from "@mui/material"
+import React from "react"
+import AboutImage from "../assets/images/about-image.png"
+import { SquareButton } from "../components/Button/SquareButton"
+import { useDesktop } from "../utils/useDesktop"
+import { usePageTitle } from "../utils/usePageTitle"
+import { HomeButton } from "../components/HomeButton"
+import GroupPic from "../assets/images/group-pic.png"
+import Dog from "../assets/images/dog.png"
+import Plants from "../assets/images/plants.png"
+import Coding from "../assets/images/code.png"
+import { ArticleEnd } from "../components/Article/ArticleEnd"
 
 export const AboutMe = () => {
-  usePageTitle("About Me");
-  const { isDesktop } = useDesktop();
+  usePageTitle("About Me")
+  const { isDesktop } = useDesktop()
   return (
     <>
       <Box
@@ -209,7 +209,7 @@ export const AboutMe = () => {
                       "https://www.figma.com/proto/frfw9yw7gP3hc1jsbHeDXv/Variables-Workshop?type=design&node-id=1-122&t=lAc33t6RPNb5c7X5-1&scaling=scale-down&page-id=0%3A1&starting-point-node-id=1%3A122&mode=design",
                       "_blank",
                       "noopener,noreferrer"
-                    );
+                    )
                   }}
                 >
                   <strong>
@@ -375,8 +375,8 @@ export const AboutMe = () => {
                 <Typography variant="body1">
                   I fell into the plant collecting hobby at some point during
                   Covid lockdowns. Currently I am obsessed with picking up
-                  fragrant orchid species, but I won’t turn down a monstera or
-                  two.
+                  fragrant orchid species and variegated aroids, but I won’t
+                  turn down a monstera or two.
                 </Typography>
               </Box>
               <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
@@ -389,8 +389,8 @@ export const AboutMe = () => {
                 <Typography variant="body1">
                   Learning about coding fundamentals, algorithms, and frameworks
                   have given me a great appreciation for what is done by
-                  developers. I hope to one day be able to build out my own
-                  designs end to end.
+                  developers. I am working towards being able to build out my
+                  own designs end to end.
                 </Typography>
               </Box>
             </Box>
@@ -399,5 +399,5 @@ export const AboutMe = () => {
       </Box>
       <ArticleEnd otherArticles={["behive", "triyo"]} />
     </>
-  );
-};
+  )
+}

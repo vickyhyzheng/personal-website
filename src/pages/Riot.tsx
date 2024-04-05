@@ -321,7 +321,7 @@ export const Riot = () => {
             />
           </Box>
           <ArticleHeader
-            title="Learnings & Takeaways"
+            title="What I Learned"
             sectionType="Retrospective"
             ref={takeawaysSection}
           >

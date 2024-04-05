@@ -35,6 +35,7 @@ import BeHiveLoFi3 from "../assets/images/behive-lofi-3.png"
 import BeHiveFinal from "../assets/images/behive-final-product.gif"
 import BeHiveNudge from "../assets/images/behive-nudge.gif"
 import BeHiveDisappear from "../assets/images/behive-disappear.gif"
+import BeHiveUserflow from "../assets/images/behive-userflow.png"
 import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
 import { HomeButton } from "../components/HomeButton"
 import { useRef } from "react"
@@ -224,7 +225,6 @@ export const BeHive = () => {
                   </i>
                 </Typography>
                 <Typography variant="body2">
-                  <br />
                   <i>
                     Informed by Cialdini's 6 principals of influence,{" "}
                     <strong>
@@ -423,6 +423,64 @@ export const BeHive = () => {
           </ArticleSubsection>
         </ArticleSection>
         <ArticleSection>
+          <ArticleHeader title="Early Sketches" sectionType="Wireframing">
+            <Typography variant="body2">
+              To start our wireframing process, we created rough sketches on
+              user flows, what features we could have, and what features we will
+              not have. We did a lot of explorations around what a to-do list
+              could look like as well as how users could navigate around the
+              app.{" "}
+            </Typography>
+          </ArticleHeader>
+          <img
+            src={BeHiveUserflow}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
+          />
+          <ArticleSubsection title="Low-Fidelity Wireframes">
+            <Typography variant="body2">
+              We created several low fidelity wireframes to do early usability
+              testing with users to measure the intuitiveness of our designs and
+              features. Primarily, we wanted to focus on the task setting,
+              nudging, and sharing aspects of our app.
+            </Typography>
+          </ArticleSubsection>
+          <img
+            src={BeHiveLoFi1}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
+          />
+          <ArticleSubsection title="Usability testing">
+            <Typography variant="body2">
+              Through conducting early usability testing with 3 Chinese
+              international students with our low-fidelity prototype, we
+              received feedback that resulted in some quality of life changes
+              made to the design to give users a more seamless experience. One
+              of these changes includes adding a suggested users section so that
+              friends can find mutual friends easily without exposing our users
+              to public searches.
+            </Typography>
+            <Typography variant="body2">
+              <br />
+              Additional keyboard functions was something we noticed with
+              WeChat, allowing users to send each other stickers, call, share
+              location, documents, and even sending money to each other. We
+              wanted to implement something similar so that users have wide
+              freedom to express themselves.
+            </Typography>
+          </ArticleSubsection>
+          <img
+            src={BeHiveLoFi2}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
+          />
+          <img
+            src={BeHiveLoFi3}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
+          />
+        </ArticleSection>
+        <ArticleSection>
           <ArticleHeader
             title="Designing for Scalability"
             sectionType="Design System"
@@ -443,58 +501,6 @@ export const BeHive = () => {
           </ArticleHeader>
           <img
             src={BeHiveDesignSystem}
-            width="100%"
-            style={{ borderRadius: "16px", marginBottom: "16px" }}
-          />
-        </ArticleSection>
-        <ArticleSection>
-          <ArticleHeader
-            title="Low-Fidelity Wireframes"
-            sectionType="Wireframing"
-          >
-            <Typography variant="body2">
-              We created several low fidelity wireframes to do early usability
-              testing with users to measure the intuitiveness of our designs and
-              features. Primarily, we wanted to focus on the task setting,
-              nudging, and sharing aspects of our app.
-            </Typography>
-          </ArticleHeader>
-          <img
-            src={BeHiveLoFi1}
-            width="100%"
-            style={{ borderRadius: "16px", marginBottom: "16px" }}
-          />
-          <Box
-            sx={{
-              display: "flex",
-              flexDirection: "column",
-              alignItems: "flex-start",
-            }}
-          >
-            <Typography variant="body2">
-              Through the early usability testing, we received feedback that
-              resulted in some quality of life changes made to the design to
-              give users a more seamless experience. One of these changes
-              includes adding a suggested users section so that friends can find
-              mutual friends easily without exposing our users to public
-              searches.
-            </Typography>
-            <Typography variant="body2">
-              <br />
-              Additional keyboard functions was something we noticed with
-              WeChat, allowing users to send each other stickers, call, share
-              location, documents, and even sending money to each other. We
-              wanted to implement something similar so that users have wide
-              freedom to express themselves.
-            </Typography>
-          </Box>
-          <img
-            src={BeHiveLoFi2}
-            width="100%"
-            style={{ borderRadius: "16px", marginBottom: "16px" }}
-          />
-          <img
-            src={BeHiveLoFi3}
             width="100%"
             style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
@@ -593,8 +599,8 @@ export const BeHive = () => {
         </ArticleSection>
         <ArticleSection>
           <ArticleHeader
-            title="Think aloud protocol"
-            sectionType="Usability testing"
+            title="Think Aloud Protocol"
+            sectionType="Usability Testing"
           >
             <Typography variant="body2">
               Using our final solution prototype, we called back the
@@ -609,7 +615,7 @@ export const BeHive = () => {
         </ArticleSection>
         <ArticleSection>
           <ArticleHeader
-            title="Takeaways and Reflection"
+            title="Takeaways"
             sectionType="Retrospective"
             ref={takeawaysSection}
           >

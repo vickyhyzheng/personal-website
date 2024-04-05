@@ -8,13 +8,10 @@ import SearchMedium from "../assets/icons/search-medium.svg"
 import ArrowDown from "../assets/icons/arrow-down-small.svg"
 import FigmaSmall from "../assets/icons/figma-small.svg"
 
-import CardSorting from "../assets/images/triyo-card-sorting.png"
 import OldSitemap from "../assets/images/triyo-sitemap-old.png"
 import NewSitemap from "../assets/images/triyo-sitemap-new.png"
 import NavbarRedesign from "../assets/images/triyo-navbar-redesign.png"
-import HiFi1 from "../assets/images/triyo-hifi-1.png"
-import HiFi2 from "../assets/images/triyo-hifi-2.png"
-import HiFi3 from "../assets/images/triyo-hifi-3.png"
+import LowfiSamples from "../assets/images/triyo-lowfi-samples.png"
 
 import { Box, Typography } from "@mui/material"
 import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable"
@@ -255,6 +252,32 @@ export const Triyo = () => {
             width="100%"
             style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
+          <ArticleSubsection title="Solutions Homepage">
+            <Typography variant="body2">
+              Another challenge identified through sitemapping was{" "}
+              <strong>
+                addressing the cramped and uninformative layout of the current
+                solutions page
+              </strong>
+              , which used site anchors and 6-8 bullet points to describe how
+              the product applies to the use case. By creating separate pages
+              for each use case, Triyo can better utilize storytelling
+              techniques to better empathize with the needs of customers and
+              give them a more tailored web experience.
+            </Typography>
+            <Typography variant="body2">
+              Working with my marketing teammates, we were able to begin
+              creating new content for the new use case pages and create
+              redesigns for other customer touchpoints, such as our blog.
+              However, due to the time constraints of this internship, I was
+              unfortunately unable to design this feature past low-fidelity.
+            </Typography>
+          </ArticleSubsection>
+          <img
+            src={LowfiSamples}
+            width="100%"
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
+          />
         </ArticleSection>
         <ArticleSection>
           <ArticleHeader
@@ -262,15 +285,6 @@ export const Triyo = () => {
             sectionType="Solution"
             ref={wireframesSection}
           >
-            <Box sx={{ mb: 4 }}>
-              <iframe
-                style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
-                width="100%"
-                height="450"
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FeZ3W25c7M4eWe6vtpS4VKG%2FTriyo-artifacts%3Fpage-id%3D412%253A9169%26type%3Ddesign%26node-id%3D412-9170%26viewport%3D488%252C469%252C0.17%26t%3DDPOe2q2pCU8XHAvm-1%26scaling%3Dscale-down-width%26starting-point-node-id%3D412%253A9170%26show-proto-sidebar%3D1%26mode%3Ddesign"
-                allowFullScreen
-              />
-            </Box>
             <Typography variant="body2">
               After collecting additional feedback from marketing, development,
               and executive, we were able to design the high fidelity version of
@@ -280,11 +294,15 @@ export const Triyo = () => {
             </Typography>
           </ArticleHeader>
 
-          <img
-            src={HiFi1}
-            width="100%"
-            style={{ borderRadius: "16px", marginBottom: "16px" }}
-          />
+          <Box sx={{ mb: 4 }}>
+            <iframe
+              style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+              width="100%"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FeZ3W25c7M4eWe6vtpS4VKG%2FTriyo-artifacts%3Fpage-id%3D0%253A1%26type%3Ddesign%26node-id%3D1-2877%26viewport%3D857%252C-501%252C0.12%26t%3DwuwuUBjqTYIuYrG7-1%26scaling%3Dscale-down%26starting-point-node-id%3D1%253A2877%26show-proto-sidebar%3D1%26mode%3Ddesign"
+              allowFullScreen
+            />
+          </Box>
           <ArticleSubsection title="Pricing Page Redesign">
             <Typography variant="body2">
               Another task that was completed for this project was the redesign
@@ -294,17 +312,20 @@ export const Triyo = () => {
               takeaways for me from this project.
             </Typography>
             <Typography variant="body2">
-              <br />
               Competitive analysis of the company's competition, Wrike, Asana,
               and Monday, were done to gain a better idea of what is the
               industry standard for plan comparisons.
             </Typography>
           </ArticleSubsection>
-          <img
-            src={HiFi2}
-            width="100%"
-            style={{ borderRadius: "16px", marginBottom: "16px" }}
-          />
+          <Box sx={{ mb: 4 }}>
+            <iframe
+              style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+              width="100%"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FeZ3W25c7M4eWe6vtpS4VKG%2FTriyo-artifacts%3Fpage-id%3D412%253A9169%26type%3Ddesign%26node-id%3D1451-2836%26viewport%3D215%252C488%252C0.17%26t%3DoZLtVPqgp8aG0Nyw-1%26scaling%3Dscale-down%26starting-point-node-id%3D1451%253A2836%26show-proto-sidebar%3D1%26mode%3Ddesign"
+              allowFullScreen
+            />
+          </Box>
           <ArticleSubsection title="Slideshow Component design">
             <Typography variant="body2">
               Through HotJar, we found that users weren't interacting with the
@@ -323,11 +344,15 @@ export const Triyo = () => {
               convenience and transparency.
             </Typography>
           </ArticleSubsection>
-          <img
-            src={HiFi3}
-            width="100%"
-            style={{ borderRadius: "16px", marginBottom: "16px" }}
-          />
+          <Box sx={{ mb: 4 }}>
+            <iframe
+              style={{ border: "1px solid rgba(0, 0, 0, 0.1)" }}
+              width="100%"
+              height="450"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FeZ3W25c7M4eWe6vtpS4VKG%2FTriyo-artifacts%3Fpage-id%3D429%253A10688%26type%3Ddesign%26node-id%3D429-10727%26viewport%3D443%252C475%252C0.31%26t%3DxzyTyaMHNqrn8qh9-1%26scaling%3Dscale-down%26starting-point-node-id%3D429%253A10727%26show-proto-sidebar%3D1%26mode%3Ddesign"
+              allowFullScreen
+            />
+          </Box>
         </ArticleSection>
         <ArticleSection>
           <ArticleHeader
