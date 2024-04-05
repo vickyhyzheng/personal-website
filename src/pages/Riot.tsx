@@ -1,46 +1,46 @@
-import { ArticlePage } from "../components/Article/ArticlePage";
-import TibbersBanner from "../assets/images/tibbers.png";
-import { ArticleSection } from "../components/Article/ArticleSection";
-import { ArticleHeader } from "../components/Article/ArticleHeader";
-import { Card } from "../components/Card";
-import CalendarSmall from "../assets/icons/calendar-small.svg";
-import EyeSmall from "../assets/icons/eye-small.svg";
-import MainMedium from "../assets/icons/main-medium.svg";
-import FoldersMedium from "../assets/icons/folders-medium.svg";
-import ShuffleMedium from "../assets/icons/shuffle-medium.svg";
-import UserVoiceMedium from "../assets/icons/user-voice-medium.svg";
-import FileMedium from "../assets/icons/file-medium.svg";
-import PaperPlaneMedium from "../assets/icons/paper-plane-medium.svg";
-import ArrowDown from "../assets/icons/arrow-down-small.svg";
-import GroupLarge from "../assets/icons/group-large.svg";
+import { ArticlePage } from "../components/Article/ArticlePage"
+import TibbersBanner from "../assets/images/tibbers.png"
+import { ArticleSection } from "../components/Article/ArticleSection"
+import { ArticleHeader } from "../components/Article/ArticleHeader"
+import { Card } from "../components/Card"
+import CalendarSmall from "../assets/icons/calendar-small.svg"
+import EyeSmall from "../assets/icons/eye-small.svg"
+import MainMedium from "../assets/icons/main-medium.svg"
+import FoldersMedium from "../assets/icons/folders-medium.svg"
+import ShuffleMedium from "../assets/icons/shuffle-medium.svg"
+import UserVoiceMedium from "../assets/icons/user-voice-medium.svg"
+import FileMedium from "../assets/icons/file-medium.svg"
+import PaperPlaneMedium from "../assets/icons/paper-plane-medium.svg"
+import ArrowDown from "../assets/icons/arrow-down-small.svg"
+import GroupLarge from "../assets/icons/group-large.svg"
 
-import { Box, Typography } from "@mui/material";
-import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable";
-import { TextTable } from "../components/Article/Tables/TextTable";
-import { RoundButton } from "../components/Button/RoundButton";
-import { ArticleSubsection } from "../components/ArticleSubsection";
-import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable";
-import { Highlight } from "../components/Article/Highlight";
-import { ArticleEnd } from "../components/Article/ArticleEnd";
-import { HomeButton } from "../components/HomeButton";
-import ScrollToTopOnMount from "../components/ScrollToTopOnMount";
-import ImageCarousel from "../components/ImageCarousel";
-import Image1 from "../assets/images/carousel/2023-LAX-Intern-Week-4 1.png";
-import Image2 from "../assets/images/carousel/2023-LAX-Intern-Week-4 2.png";
-import Image3 from "../assets/images/carousel/2023-LAX-Intern-Week-4 3.png";
-import Image4 from "../assets/images/carousel/2023-LAX-Intern-Week-4 4.png";
-import Image5 from "../assets/images/carousel/2023-LAX-Intern-Week-4 5.png";
-import Image6 from "../assets/images/carousel/2023-LAX-Intern-Week-4 6.png";
-import Image7 from "../assets/images/carousel/2023-LAX-Intern-Week-4 7.png";
-import Image8 from "../assets/images/carousel/2023-LAX-Intern-Week-4 8.png";
-import Image9 from "../assets/images/riot-projects.png";
-import { useRef } from "react";
-import { skipToSection } from "../utils/skipToSection";
-import { usePageTitle } from "../utils/usePageTitle";
+import { Box, Typography } from "@mui/material"
+import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable"
+import { TextTable } from "../components/Article/Tables/TextTable"
+import { RoundButton } from "../components/Button/RoundButton"
+import { ArticleSubsection } from "../components/ArticleSubsection"
+import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable"
+import { Highlight } from "../components/Article/Highlight"
+import { ArticleEnd } from "../components/Article/ArticleEnd"
+import { HomeButton } from "../components/HomeButton"
+import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
+import ImageCarousel from "../components/ImageCarousel"
+import Image1 from "../assets/images/carousel/2023-LAX-Intern-Week-4 1.png"
+import Image2 from "../assets/images/carousel/2023-LAX-Intern-Week-4 2.png"
+import Image3 from "../assets/images/carousel/2023-LAX-Intern-Week-4 3.png"
+import Image4 from "../assets/images/carousel/2023-LAX-Intern-Week-4 4.png"
+import Image5 from "../assets/images/carousel/2023-LAX-Intern-Week-4 5.png"
+import Image6 from "../assets/images/carousel/2023-LAX-Intern-Week-4 6.png"
+import Image7 from "../assets/images/carousel/2023-LAX-Intern-Week-4 7.png"
+import Image8 from "../assets/images/carousel/2023-LAX-Intern-Week-4 8.png"
+import Image9 from "../assets/images/riot-projects.png"
+import { useRef } from "react"
+import { skipToSection } from "../utils/skipToSection"
+import { usePageTitle } from "../utils/usePageTitle"
 
 export const Riot = () => {
-  usePageTitle("Vicky Zheng | Riot");
-  const takeawaysSection = useRef<HTMLElement | null>(null);
+  usePageTitle("Vicky Zheng | Riot")
+  const takeawaysSection = useRef<HTMLElement | null>(null)
 
   const carouselImages = [
     Image1,
@@ -51,9 +51,9 @@ export const Riot = () => {
     Image6,
     Image7,
     Image8,
-  ];
+  ]
   const mediumLink =
-    "https://medium.com/riot-games-ux-design/my-ux-design-internship-with-riot-games-d5efca21314c";
+    "https://medium.com/riot-games-ux-design/my-ux-design-internship-with-riot-games-d5efca21314c"
   const headerBody = (
     <>
       <Typography variant="body2">
@@ -76,7 +76,7 @@ export const Riot = () => {
         how I have grown as a designer during my time with Riot.
       </Typography>
     </>
-  );
+  )
   const teamTableContents = [
     {
       title: "My Role",
@@ -112,17 +112,17 @@ export const Riot = () => {
         </>
       ),
     },
-  ];
+  ]
   const summerStatsContents1 = [
     { icon: MainMedium, title: "4+ Features Designed" },
     { icon: FoldersMedium, title: "2 Project Files Handed Off" },
     { icon: ShuffleMedium, title: "3+ User Flows Designed" },
-  ];
+  ]
   const summerStatsContents2 = [
     { icon: UserVoiceMedium, title: "16+ Feedback Sessions" },
     { icon: FileMedium, title: "6 A/B Tests Conducted" },
     { icon: PaperPlaneMedium, title: "1 Feature In Development" },
-  ];
+  ]
   const learningsContents1 = [
     {
       header: "01",
@@ -136,7 +136,7 @@ export const Riot = () => {
       description:
         "Involving a variety of people from different disciplines and teams can help you identify problems early on and make a product that is both exciting to use (and make if you're an engineer).",
     },
-  ];
+  ]
   const learningsContents2 = [
     {
       header: "03",
@@ -157,7 +157,7 @@ export const Riot = () => {
         </>
       ),
     },
-  ];
+  ]
 
   return (
     <>
@@ -186,7 +186,7 @@ export const Riot = () => {
                   "https://calendly.com/vyzhng/vicky-zheng-1-1",
                   "_blank",
                   "noopener,noreferrer"
-                );
+                )
               }}
             />
           </Box>
@@ -198,7 +198,7 @@ export const Riot = () => {
             text="Read the medium article"
             icon={EyeSmall}
             onClick={() => {
-              window.open(mediumLink, "_blank", "noopener,noferrer"); // noopener,noreferrer makes this open in a new window
+              window.open(mediumLink, "_blank", "noopener,noferrer") // noopener,noreferrer makes this open in a new window
             }}
           />
           <ArticleSubsection title="Responsibilities">
@@ -229,7 +229,7 @@ export const Riot = () => {
             text="Skip to takeaways"
             icon={ArrowDown}
             onClick={() => {
-              skipToSection(takeawaysSection, true);
+              skipToSection(takeawaysSection, true)
             }}
           />
         </ArticleSection>
@@ -262,7 +262,7 @@ export const Riot = () => {
           <img
             src={Image2}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="My Projects">
             <Box>
@@ -290,7 +290,7 @@ export const Riot = () => {
           <img
             src={Image9}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="Summer Statistics">
             <ThreeColumnTable contents={summerStatsContents1} />
@@ -316,7 +316,7 @@ export const Riot = () => {
                   "https://calendly.com/vyzhng/vicky-zheng-1-1",
                   "_blank",
                   "noopener,noreferrer"
-                );
+                )
               }}
             />
           </Box>
@@ -344,5 +344,5 @@ export const Riot = () => {
       <ArticleEnd otherArticles={["behive", "triyo"]} />
       <HomeButton />
     </>
-  );
-};
+  )
+}

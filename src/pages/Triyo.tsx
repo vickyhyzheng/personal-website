@@ -1,39 +1,39 @@
-import { ArticlePage } from "../components/Article/ArticlePage";
-import { ArticleSection } from "../components/Article/ArticleSection";
-import { ArticleHeader } from "../components/Article/ArticleHeader";
-import EyeSmall from "../assets/icons/eye-small.svg";
-import QuestionMedium from "../assets/icons/question-mark-medium.svg";
-import MuteMedium from "../assets/icons/mute-medium.svg";
-import SearchMedium from "../assets/icons/search-medium.svg";
-import ArrowDown from "../assets/icons/arrow-down-small.svg";
-import FigmaSmall from "../assets/icons/figma-small.svg";
+import { ArticlePage } from "../components/Article/ArticlePage"
+import { ArticleSection } from "../components/Article/ArticleSection"
+import { ArticleHeader } from "../components/Article/ArticleHeader"
+import EyeSmall from "../assets/icons/eye-small.svg"
+import QuestionMedium from "../assets/icons/question-mark-medium.svg"
+import MuteMedium from "../assets/icons/mute-medium.svg"
+import SearchMedium from "../assets/icons/search-medium.svg"
+import ArrowDown from "../assets/icons/arrow-down-small.svg"
+import FigmaSmall from "../assets/icons/figma-small.svg"
 
-import CardSorting from "../assets/images/triyo-card-sorting.png";
-import OldSitemap from "../assets/images/triyo-sitemap-old.png";
-import NewSitemap from "../assets/images/triyo-sitemap-new.png";
-import NavbarRedesign from "../assets/images/triyo-navbar-redesign.png";
-import HiFi1 from "../assets/images/triyo-hifi-1.png";
-import HiFi2 from "../assets/images/triyo-hifi-2.png";
-import HiFi3 from "../assets/images/triyo-hifi-3.png";
+import CardSorting from "../assets/images/triyo-card-sorting.png"
+import OldSitemap from "../assets/images/triyo-sitemap-old.png"
+import NewSitemap from "../assets/images/triyo-sitemap-new.png"
+import NavbarRedesign from "../assets/images/triyo-navbar-redesign.png"
+import HiFi1 from "../assets/images/triyo-hifi-1.png"
+import HiFi2 from "../assets/images/triyo-hifi-2.png"
+import HiFi3 from "../assets/images/triyo-hifi-3.png"
 
-import { Box, Typography } from "@mui/material";
-import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable";
-import { TextTable } from "../components/Article/Tables/TextTable";
-import { RoundButton } from "../components/Button/RoundButton";
-import { ArticleSubsection } from "../components/ArticleSubsection";
-import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable";
-import { ArticleEnd } from "../components/Article/ArticleEnd";
+import { Box, Typography } from "@mui/material"
+import { ThreeColumnTable } from "../components/Article/Tables/ThreeColumnTable"
+import { TextTable } from "../components/Article/Tables/TextTable"
+import { RoundButton } from "../components/Button/RoundButton"
+import { ArticleSubsection } from "../components/ArticleSubsection"
+import { TwoColumnTable } from "../components/Article/Tables/TwoColumnTable"
+import { ArticleEnd } from "../components/Article/ArticleEnd"
 
-import TriyoBanner from "../assets/images/triyo-banner-2.png";
-import { HomeButton } from "../components/HomeButton";
-import ScrollToTopOnMount from "../components/ScrollToTopOnMount";
-import { useRef } from "react";
-import { skipToSection } from "../utils/skipToSection";
-import { usePageTitle } from "../utils/usePageTitle";
+import TriyoBanner from "../assets/images/triyo-banner-2.png"
+import { HomeButton } from "../components/HomeButton"
+import ScrollToTopOnMount from "../components/ScrollToTopOnMount"
+import { useRef } from "react"
+import { skipToSection } from "../utils/skipToSection"
+import { usePageTitle } from "../utils/usePageTitle"
 
 export const Triyo = () => {
-  usePageTitle("Vicky Zheng | Triyo");
-  const wireframesSection = useRef<HTMLElement | null>(null);
+  usePageTitle("Vicky Zheng | Triyo")
+  const wireframesSection = useRef<HTMLElement | null>(null)
   const teamTableContents = [
     {
       title: "My Role",
@@ -71,7 +71,7 @@ export const Triyo = () => {
         </>
       ),
     },
-  ];
+  ]
   const interviewFindings = [
     {
       icon: MuteMedium,
@@ -91,7 +91,7 @@ export const Triyo = () => {
       description:
         "Important information were inaccessible through the menu. They existed in tertiary pages and were very challenging to find",
     },
-  ];
+  ]
 
   const learningsContents = [
     {
@@ -106,7 +106,7 @@ export const Triyo = () => {
       description:
         "Learning about the different needs and objectives of each role, and what I can do for to make working with me more fun, was one of the most important activities I learned to do.",
     },
-  ];
+  ]
 
   return (
     <>
@@ -137,7 +137,7 @@ export const Triyo = () => {
                 "https://www.figma.com/proto/eZ3W25c7M4eWe6vtpS4VKG/Triyo-artifacts?page-id=412%3A9169&type=design&node-id=412-9170&viewport=488%2C469%2C0.17&t=Y0agMACN14akvxIA-1&scaling=scale-down-width&starting-point-node-id=412%3A9170&show-proto-sidebar=1",
                 "_blank",
                 "noopener,noreferrer"
-              );
+              )
             }}
           />
           <ArticleSubsection title="Background">
@@ -165,7 +165,7 @@ export const Triyo = () => {
             text="Skip to wireframes"
             icon={ArrowDown}
             onClick={() => {
-              skipToSection(wireframesSection);
+              skipToSection(wireframesSection)
             }}
           />
         </ArticleSection>
@@ -219,7 +219,7 @@ export const Triyo = () => {
           <img
             src={OldSitemap}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="Updated Sitemap">
             <Typography variant="body2">
@@ -237,7 +237,7 @@ export const Triyo = () => {
           <img
             src={NewSitemap}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="Navbar Redesign">
             <Typography variant="body2">
@@ -253,7 +253,7 @@ export const Triyo = () => {
           <img
             src={NavbarRedesign}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
         </ArticleSection>
         <ArticleSection>
@@ -283,7 +283,7 @@ export const Triyo = () => {
           <img
             src={HiFi1}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="Pricing Page Redesign">
             <Typography variant="body2">
@@ -303,7 +303,7 @@ export const Triyo = () => {
           <img
             src={HiFi2}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
           <ArticleSubsection title="Slideshow Component design">
             <Typography variant="body2">
@@ -326,7 +326,7 @@ export const Triyo = () => {
           <img
             src={HiFi3}
             width="100%"
-            style={{ borderRadius: "16px", marginBottom: "64px" }}
+            style={{ borderRadius: "16px", marginBottom: "16px" }}
           />
         </ArticleSection>
         <ArticleSection>
@@ -363,5 +363,5 @@ export const Triyo = () => {
       <ArticleEnd otherArticles={["riot", "behive"]} />
       <HomeButton />
     </>
-  );
-};
+  )
+}
