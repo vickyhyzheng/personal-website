@@ -55,7 +55,7 @@ export const Sidebar = ({ projectMap }: Sidebar) => {
         <Box>
           <Typography variant="body1">{intro}</Typography>
           <Typography display="inline" variant="body1">
-            Preivously UX at{" "}
+            Previously UX at{" "}
           </Typography>
           <Typography
             display="inline"
